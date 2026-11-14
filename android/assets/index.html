@@ -1,0 +1,1697 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2A1B12">
+<meta name="description" content="veniz | فروشگاه آنلاین قهوه، اکسسوری و قهوه‌ساز">
+<title>veniz | فروشگاه قهوه ونیز</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%232A1B12'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<style>
+:root{
+  --espresso:#2A1B12; --brown:#4B2E1E; --brown2:#5D3A26;
+  --caramel:#B5773A; --gold:#D9A441; --cream:#F7F1E7; --cream2:#EFE5D6;
+  --card:#FFFFFF; --text:#2B2118; --muted:#8A7A6D; --line:#E8DCCB;
+  --danger:#C0392B; --green:#2E7D32; --blue:#1D6FB8; --radius:16px;
+  --shadow:0 4px 18px rgba(42,27,18,.08); --shadow-lg:0 12px 34px rgba(42,27,18,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Vazirmatn',Tahoma,'Segoe UI',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,select,textarea{font-family:inherit;font-size:14px}
+::selection{background:var(--gold);color:#fff}
+::-webkit-scrollbar{width:10px;height:8px}
+::-webkit-scrollbar-thumb{background:#CBB89E;border-radius:8px}
+::-webkit-scrollbar-track{background:var(--cream2)}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(247,241,231,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-in{display:flex;align-items:center;gap:18px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:24px;color:var(--espresso);letter-spacing:.5px}
+.logo .bean{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brown),var(--espresso));display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--gold);box-shadow:var(--shadow)}
+.logo small{font-size:11px;font-weight:500;color:var(--muted);display:block;line-height:1.2;letter-spacing:0}
+.main-nav{display:flex;gap:6px;margin-inline-start:8px}
+.main-nav a{padding:8px 14px;border-radius:10px;font-weight:600;color:var(--brown);transition:.2s}
+.main-nav a:hover,.main-nav a.active{background:var(--cream2);color:var(--espresso)}
+.header-search{flex:1;max-width:420px;position:relative}
+.header-search input{width:100%;padding:10px 40px 10px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;font-size:14px;outline:none;transition:.2s}
+.header-search input:focus{border-color:var(--caramel)}
+.header-search .s-ico{position:absolute;right:13px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:15px;pointer-events:none}
+.header-actions{display:flex;align-items:center;gap:8px;margin-inline-start:auto}
+.icon-btn{position:relative;width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:19px;color:var(--brown);transition:.2s;background:transparent}
+.icon-btn:hover{background:var(--cream2)}
+.cart-count{position:absolute;top:2px;left:2px;min-width:19px;height:19px;padding:0 5px;background:var(--caramel);color:#fff;border-radius:10px;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.user-chip{display:flex;align-items:center;gap:8px;padding:7px 14px;border-radius:12px;background:var(--cream2);font-weight:600;font-size:13px;color:var(--brown);border:1px solid var(--line);max-width:160px}
+.user-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.user-menu{position:absolute;top:60px;left:16px;background:#fff;border-radius:14px;box-shadow:var(--shadow-lg);border:1px solid var(--line);min-width:190px;padding:6px;z-index:60}
+.user-menu a,.user-menu button{display:flex;align-items:center;gap:10px;width:100%;padding:10px 12px;border-radius:10px;font-size:13.5px;font-weight:600;color:var(--text);text-align:right}
+.user-menu a:hover,.user-menu button:hover{background:var(--cream)}
+.user-menu .um-head{padding:8px 12px;border-bottom:1px solid var(--line);margin-bottom:4px;font-size:12px;color:var(--muted)}
+.user-menu .um-head b{display:block;color:var(--espresso);font-size:13.5px}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;border-radius:22px;overflow:hidden;margin-top:18px;min-height:340px;display:flex;align-items:center;background:var(--espresso)}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a86e6460f040.jpg') center/cover;opacity:.45}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(26,15,8,.92) 25%,rgba(26,15,8,.35) 70%,transparent)}
+.hero-in{position:relative;z-index:2;padding:48px 44px;max-width:600px;color:#fff}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(217,164,65,.18);border:1px solid rgba(217,164,65,.5);color:var(--gold);font-size:12.5px;font-weight:700;padding:6px 14px;border-radius:30px;margin-bottom:16px}
+.hero h1{font-size:38px;font-weight:900;line-height:1.4;margin-bottom:12px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{color:#E4D6C4;font-size:15.5px;margin-bottom:24px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 22px;border-radius:13px;font-weight:700;font-size:14px;transition:.2s;border:1.5px solid transparent;white-space:nowrap}
+.btn-primary{background:linear-gradient(135deg,var(--caramel),var(--brown));color:#fff;box-shadow:0 4px 14px rgba(181,119,58,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(181,119,58,.45)}
+.btn-dark{background:var(--espresso);color:#fff}
+.btn-dark:hover{background:var(--brown)}
+.btn-outline{background:transparent;border-color:var(--caramel);color:var(--caramel)}
+.btn-outline:hover{background:var(--caramel);color:#fff}
+.btn-ghost{background:var(--cream2);color:var(--brown)}
+.btn-ghost:hover{background:#E5D7C2}
+.btn-danger{background:#FDF0EE;color:var(--danger);border-color:#F2C6C0}
+.btn-danger:hover{background:var(--danger);color:#fff}
+.btn-gold{background:var(--gold);color:#3B2A12}
+.btn-sm{padding:7px 14px;font-size:12.5px;border-radius:10px}
+.btn-lg{padding:14px 30px;font-size:15.5px;border-radius:14px}
+.btn-block{width:100%}
+.btn:disabled{opacity:.55;cursor:not-allowed;transform:none!important}
+
+/* ---------- Sections ---------- */
+.section{margin:44px 0}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;gap:12px}
+.section-head h2{font-size:22px;font-weight:900;color:var(--espresso);display:flex;align-items:center;gap:10px}
+.section-head h2::before{content:'';width:5px;height:24px;border-radius:4px;background:linear-gradient(var(--gold),var(--caramel))}
+.section-head a{font-size:13px;font-weight:700;color:var(--caramel)}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat-card{position:relative;border-radius:var(--radius);overflow:hidden;padding:26px 22px;color:#fff;min-height:120px;display:flex;flex-direction:column;justify-content:flex-end;transition:.25s;box-shadow:var(--shadow)}
+.cat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.cat-card .cc-ico{position:absolute;top:18px;left:20px;font-size:34px;opacity:.9}
+.cat-card h3{font-size:18px;font-weight:800}
+.cat-card small{opacity:.85;font-size:12.5px}
+.cat-card.c1{background:linear-gradient(135deg,#6B4226,#3E2415)}
+.cat-card.c2{background:linear-gradient(135deg,#8A5A33,#54331C)}
+.cat-card.c3{background:linear-gradient(135deg,#4B2E1E,#241309)}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0}
+.feature{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px;display:flex;gap:13px;align-items:center;box-shadow:var(--shadow)}
+.feature .f-ico{width:46px;height:46px;border-radius:13px;background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.feature b{display:block;font-size:13.5px;color:var(--espresso)}
+.feature small{color:var(--muted);font-size:11.5px;line-height:1.6;display:block}
+
+/* ---------- Product cards ---------- */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.prod-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:.25s;display:flex;flex-direction:column;position:relative}
+.prod-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#E0CBA8}
+.p-img{position:relative;aspect-ratio:1;background:#F2EADD;cursor:pointer;overflow:hidden}
+.p-img img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.prod-card:hover .p-img img{transform:scale(1.06)}
+.p-badges{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.pbadge{font-size:11px;font-weight:800;padding:4px 10px;border-radius:8px;color:#fff}
+.pbadge.sale{background:var(--danger)}
+.pbadge.out{background:#6B6B6B}
+.pbadge.feat{background:var(--gold);color:#3B2A12}
+.p-body{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.p-cat{font-size:11px;font-weight:700;color:var(--caramel)}
+.p-name{font-size:14px;font-weight:700;color:var(--espresso);line-height:1.6;min-height:44px;cursor:pointer;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.p-name:hover{color:var(--caramel)}
+.p-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:8px;margin-top:auto}
+.price{display:flex;flex-direction:column;line-height:1.5}
+.price .new{font-size:15px;font-weight:900;color:var(--espresso)}
+.price .new small{font-size:11px;font-weight:600;color:var(--muted)}
+.price .old{font-size:12px;color:var(--muted);text-decoration:line-through}
+.add-btn{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--caramel),var(--brown));color:#fff;font-size:19px;display:flex;align-items:center;justify-content:center;transition:.2s;flex-shrink:0}
+.add-btn:hover{transform:scale(1.08)}
+.add-btn:disabled{background:#D8CBBB;cursor:not-allowed;transform:none}
+
+/* ---------- Toolbar / chips ---------- */
+.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:8px 18px;border-radius:30px;background:#fff;border:1.5px solid var(--line);font-size:13px;font-weight:700;color:var(--brown);transition:.2s}
+.chip:hover{border-color:var(--caramel)}
+.chip.active{background:var(--espresso);border-color:var(--espresso);color:#fff}
+.sort-select{margin-inline-start:auto}
+select.form-control{width:auto}
+.count-note{font-size:12.5px;color:var(--muted)}
+
+/* ---------- Product detail ---------- */
+.crumbs{font-size:12.5px;color:var(--muted);margin:18px 0 14px}
+.crumbs a{color:var(--caramel);font-weight:600}
+.pd{display:grid;grid-template-columns:460px 1fr;gap:36px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+.pd-img{border-radius:16px;overflow:hidden;aspect-ratio:1;background:#F2EADD}
+.pd-img img{width:100%;height:100%;object-fit:cover}
+.pd-info h1{font-size:24px;font-weight:900;color:var(--espresso);margin:8px 0 6px}
+.pd-price{display:flex;align-items:baseline;gap:12px;margin:18px 0}
+.pd-price .new{font-size:28px;font-weight:900;color:var(--brown)}
+.pd-price .new small{font-size:14px;color:var(--muted);font-weight:600}
+.pd-price .old{font-size:16px;color:var(--muted);text-decoration:line-through}
+.pd-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);border-bottom:1px dashed var(--line);padding-bottom:16px;margin-bottom:16px}
+.pd-meta b{color:var(--green)}
+.pd-desc{font-size:14px;color:#5B4B3C;line-height:2;margin-bottom:22px}
+.buy-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.qty-stepper{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.qty-stepper button{width:40px;height:44px;font-size:19px;color:var(--brown);font-weight:800}
+.qty-stepper button:hover{background:var(--cream2)}
+.qty-stepper input{width:52px;height:44px;text-align:center;border:none;outline:none;font-weight:800;font-size:15px}
+.stock-note{font-size:12.5px;font-weight:700}
+.stock-note.ok{color:var(--green)}
+.stock-note.low{color:var(--danger)}
+
+/* ---------- Cart / checkout ---------- */
+.cart-layout{display:grid;grid-template-columns:1fr 340px;gap:22px;align-items:start;margin:24px 0}
+.cart-items{display:flex;flex-direction:column;gap:12px}
+.cart-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px;align-items:center}
+.cart-item img{width:86px;height:86px;object-fit:cover;border-radius:12px;background:#F2EADD}
+.ci-info{flex:1;min-width:0}
+.ci-info .n{font-weight:700;font-size:14px;color:var(--espresso);cursor:pointer}
+.ci-info .p{font-size:13px;color:var(--caramel);font-weight:700;margin-top:2px}
+.ci-remove{color:var(--danger);font-size:12px;font-weight:700;padding:4px 8px;border-radius:8px}
+.ci-remove:hover{background:#FDF0EE}
+.ci-total{font-weight:900;font-size:14.5px;color:var(--espresso);min-width:90px;text-align:left}
+.summary-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);position:sticky;top:86px}
+.summary-card h3{font-size:16px;font-weight:900;color:var(--espresso);margin-bottom:16px}
+.sum-row{display:flex;justify-content:space-between;font-size:13.5px;padding:7px 0;color:#5B4B3C}
+.sum-row.total{border-top:1.5px dashed var(--line);margin-top:8px;padding-top:14px;font-size:16px;font-weight:900;color:var(--espresso)}
+.free-bar{background:var(--cream2);border-radius:8px;height:8px;overflow:hidden;margin:6px 0 4px}
+.free-bar div{height:100%;background:linear-gradient(90deg,var(--gold),var(--green));border-radius:8px;transition:.4s}
+.free-note{font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.free-note b{color:var(--green)}
+.checkout-layout{display:grid;grid-template-columns:1fr 340px;gap:22px;align-items:start;margin:24px 0}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.panel h3{font-size:16px;font-weight:900;color:var(--espresso);margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.panel h3 .step-n{width:26px;height:26px;border-radius:9px;background:var(--espresso);color:#fff;font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+.pay-opts{display:grid;gap:10px}
+.pay-opt{display:flex;align-items:center;gap:12px;border:1.5px solid var(--line);border-radius:13px;padding:14px 16px;cursor:pointer;transition:.2s}
+.pay-opt:hover{border-color:var(--caramel)}
+.pay-opt.sel{border-color:var(--caramel);background:#FBF4E8}
+.pay-opt input{width:18px;height:18px;accent-color:var(--brown)}
+.pay-opt b{font-size:14px;color:var(--espresso);display:block}
+.pay-opt small{font-size:11.5px;color:var(--muted);display:block;line-height:1.6}
+.pay-opt .po-ico{font-size:24px}
+
+/* ---------- Forms ---------- */
+.form-group{margin-bottom:14px}
+.form-label{display:block;font-size:12.5px;font-weight:700;color:var(--brown);margin-bottom:6px}
+.form-control{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;outline:none;transition:.2s;color:var(--text)}
+.form-control:focus{border-color:var(--caramel);box-shadow:0 0 0 3px rgba(181,119,58,.12)}
+.form-control.err{border-color:var(--danger)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+textarea.form-control{resize:vertical;min-height:80px}
+.form-hint{font-size:11px;color:var(--muted);margin-top:4px}
+.form-error{background:#FDF0EE;border:1px solid #F2C6C0;color:var(--danger);font-size:12.5px;font-weight:600;border-radius:10px;padding:10px 14px;margin-bottom:14px}
+
+/* ---------- Auth ---------- */
+.auth-wrap{max-width:440px;margin:40px auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow-lg)}
+.auth-tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--cream2);border-radius:12px;padding:4px;margin-bottom:22px}
+.auth-tabs button{padding:10px;border-radius:9px;font-weight:700;font-size:13.5px;color:var(--muted)}
+.auth-tabs button.active{background:#fff;color:var(--espresso);box-shadow:var(--shadow)}
+.auth-logo{text-align:center;margin-bottom:18px}
+.auth-logo .bean{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--brown),var(--espresso));display:inline-flex;align-items:center;justify-content:center;font-size:28px;color:var(--gold);margin-bottom:10px}
+.auth-logo h2{font-size:19px;font-weight:900;color:var(--espresso)}
+.auth-logo p{font-size:12.5px;color:var(--muted)}
+
+/* ---------- Gateway ---------- */
+.gateway{max-width:480px;margin:34px auto;background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+.gw-head{background:linear-gradient(135deg,var(--brown),var(--espresso));color:#fff;padding:22px 24px;display:flex;align-items:center;justify-content:space-between}
+.gw-head .t{font-weight:900;font-size:16px}
+.gw-head small{display:block;font-size:11px;opacity:.8;font-weight:400}
+.gw-amount{background:#FBF4E8;margin:18px 24px 0;border-radius:13px;border:1px dashed var(--gold);padding:14px;text-align:center}
+.gw-amount b{font-size:22px;color:var(--brown)}
+.gw-amount small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.gw-body{padding:20px 24px 26px}
+.gw-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gw-pay{margin-top:8px}
+.gw-secure{text-align:center;font-size:11px;color:var(--muted);margin-top:14px;display:flex;align-items:center;justify-content:center;gap:6px}
+.spin{width:18px;height:18px;border:2.5px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;display:inline-block}
+@keyframes sp{to{transform:rotate(360deg)}}
+.otp-row{display:flex;gap:8px}
+.otp-row .form-control{flex:1}
+
+/* ---------- Result ---------- */
+.result-wrap{max-width:520px;margin:46px auto;text-align:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:44px 30px;box-shadow:var(--shadow-lg)}
+.result-ico{width:84px;height:84px;border-radius:50%;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:40px}
+.result-ico.ok{background:#E8F5E9;color:var(--green)}
+.result-ico.warn{background:#FFF8E1;color:#B58900}
+.result-ico.bad{background:#FDF0EE;color:var(--danger)}
+.result-wrap h2{font-size:21px;font-weight:900;color:var(--espresso);margin-bottom:8px}
+.result-wrap p{color:var(--muted);font-size:13.5px;margin-bottom:6px}
+.result-code{display:inline-block;background:var(--cream2);border-radius:10px;padding:8px 18px;font-weight:900;color:var(--brown);font-size:15px;margin:10px 0 18px;letter-spacing:1px}
+.result-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+
+/* ---------- Account / orders ---------- */
+.orders-list{display:flex;flex-direction:column;gap:12px}
+.order-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.order-card .oc-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.order-card .code{font-weight:900;color:var(--espresso);letter-spacing:.5px}
+.ochip{font-size:11px;font-weight:800;padding:4px 12px;border-radius:20px}
+.ochip.pending{background:#FFF8E1;color:#9A7B00}
+.ochip.processing{background:#E8F0FE;color:var(--blue)}
+.ochip.shipped{background:#EDE7F6;color:#6A4BA4}
+.ochip.delivered{background:#E8F5E9;color:var(--green)}
+.ochip.canceled{background:#FDF0EE;color:var(--danger)}
+.ochip.paid{background:#E8F5E9;color:var(--green)}
+.ochip.unpaid{background:#FFF3E0;color:#B58900}
+.order-items-mini{font-size:12.5px;color:var(--muted);line-height:2}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--espresso);color:#D8C9B8;margin-top:60px}
+.footer-in{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:28px;padding:44px 0 30px}
+.site-footer h4{color:#fff;font-size:15px;margin-bottom:14px;font-weight:800}
+.site-footer a{display:block;font-size:13px;padding:4px 0;color:#C9B79F}
+.site-footer a:hover{color:var(--gold)}
+.footer-brand .logo{color:#fff;margin-bottom:12px}
+.footer-brand p{font-size:12.5px;line-height:2;color:#B8A58E}
+.footer-contact div{display:flex;gap:8px;font-size:13px;padding:4px 0;color:#C9B79F}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:16px 0;text-align:center;font-size:12px;color:#9C8A74}
+
+/* ---------- Admin ---------- */
+.admin-layout{display:grid;grid-template-columns:250px 1fr;min-height:100vh;background:var(--cream)}
+.sidebar{background:linear-gradient(180deg,var(--espresso),#1E120B);color:#D8C9B8;padding:22px 14px;display:flex;flex-direction:column;gap:4px;position:sticky;top:0;height:100vh;overflow-y:auto}
+.sidebar .logo{color:#fff;font-size:21px;padding:0 8px;margin-bottom:22px}
+.side-link{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;font-size:13.5px;font-weight:600;color:#C9B79F;transition:.2s;width:100%;text-align:right}
+.side-link:hover{background:rgba(255,255,255,.06);color:#fff}
+.side-link.active{background:var(--caramel);color:#fff;box-shadow:0 4px 12px rgba(181,119,58,.4)}
+.side-link .cnt{margin-inline-start:auto;background:rgba(0,0,0,.25);font-size:11px;padding:2px 9px;border-radius:12px;min-width:24px;text-align:center}
+.side-sep{height:1px;background:rgba(255,255,255,.08);margin:10px 6px}
+.side-out{margin-top:auto;color:#E8A9A2}
+.admin-main{padding:26px 30px;min-width:0}
+.admin-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;gap:14px;flex-wrap:wrap}
+.admin-top h1{font-size:22px;font-weight:900;color:var(--espresso)}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:26px}
+.stat-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;gap:14px;align-items:center;box-shadow:var(--shadow)}
+.stat-card .s-ico{width:52px;height:52px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.stat-card b{font-size:19px;font-weight:900;color:var(--espresso);display:block;line-height:1.4}
+.stat-card small{font-size:12px;color:var(--muted)}
+.i1{background:#FBF4E8;color:var(--caramel)}.i2{background:#E8F0FE;color:var(--blue)}
+.i3{background:#E8F5E9;color:var(--green)}.i4{background:#F3E8FD;color:#8E44AD}
+.admin-panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.admin-panel .ap-head{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.admin-panel .ap-head h3{font-size:15px;font-weight:800;color:var(--espresso)}
+.admin-panel .ap-head input{width:230px}
+.tbl-wrap{overflow-x:auto}
+table.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th{background:var(--cream2);padding:12px 14px;text-align:right;font-size:12px;color:var(--brown);font-weight:800;white-space:nowrap}
+.tbl td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:middle}
+.tbl tr:hover td{background:#FDFAF4}
+.thumb{width:46px;height:46px;border-radius:10px;object-fit:cover;background:#F2EADD;flex-shrink:0}
+.tbl .actions{display:flex;gap:6px}
+.tbl .actions button,.tbl .actions a{width:32px;height:32px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;transition:.2s}
+.act-edit{background:#E8F0FE;color:var(--blue)}
+.act-edit:hover{background:var(--blue);color:#fff}
+.act-del{background:#FDF0EE;color:var(--danger)}
+.act-del:hover{background:var(--danger);color:#fff}
+.act-view{background:#FBF4E8;color:var(--caramel)}
+.act-view:hover{background:var(--caramel);color:#fff}
+.feat-star{color:var(--gold);cursor:pointer;font-size:16px}
+.feat-star.off{color:#D8CBBB}
+.status-select{padding:6px 10px;border-radius:9px;border:1.5px solid var(--line);font-size:12px;font-weight:700;background:#fff;color:var(--text)}
+.dash-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;align-items:start}
+.mini-list{display:flex;flex-direction:column}
+.mini-list .ml-row{display:flex;justify-content:space-between;align-items:center;padding:11px 20px;border-top:1px solid var(--line);font-size:12.5px}
+.mini-list .ml-row:first-child{border-top:none}
+.stock-pill{font-size:11px;font-weight:800;padding:3px 10px;border-radius:12px}
+.stock-pill.ok{background:#E8F5E9;color:var(--green)}
+.stock-pill.low{background:#FFF3E0;color:#B58900}
+.stock-pill.zero{background:#FDF0EE;color:var(--danger)}
+
+/* ---------- Modal / toast ---------- */
+.modal-backdrop{position:fixed;inset:0;background:rgba(26,15,8,.55);backdrop-filter:blur(3px);z-index:100;display:flex;align-items:center;justify-content:center;padding:18px;animation:fade .18s}
+@keyframes fade{from{opacity:0}}
+.modal{background:#fff;border-radius:20px;max-width:640px;width:100%;max-height:88vh;overflow-y:auto;box-shadow:var(--shadow-lg);animation:pop .2s}
+@keyframes pop{from{transform:scale(.94);opacity:0}}
+.modal .m-head{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:2;border-radius:20px 20px 0 0}
+.modal .m-head h3{font-size:16px;font-weight:900;color:var(--espresso)}
+.m-close{width:34px;height:34px;border-radius:10px;background:var(--cream2);color:var(--brown);font-size:16px}
+.modal .m-body{padding:22px}
+.modal-sm{max-width:400px}
+.toast-wrap{position:fixed;bottom:24px;right:50%;transform:translateX(50%);z-index:200;display:flex;flex-direction:column;gap:8px;align-items:center}
+.toast{background:var(--espresso);color:#fff;padding:12px 22px;border-radius:13px;font-size:13.5px;font-weight:600;box-shadow:var(--shadow-lg);animation:tin .25s;display:flex;gap:8px;align-items:center;max-width:90vw}
+.toast.ok{background:#224A24}
+.toast.err{background:#7C221A}
+@keyframes tin{from{transform:translateY(14px);opacity:0}}
+
+/* ---------- Empty / misc ---------- */
+.empty-state{text-align:center;padding:56px 20px;color:var(--muted)}
+.empty-state .e-ico{font-size:52px;margin-bottom:12px;opacity:.7}
+.empty-state b{display:block;font-size:16px;color:var(--espresso);margin-bottom:6px}
+.empty-state p{font-size:13px;margin-bottom:18px}
+.link{color:var(--caramel);font-weight:700;cursor:pointer}
+.admin-login-wrap{max-width:420px;margin:60px auto}
+.alert-note{background:#FBF4E8;border:1px solid #EAD9B8;color:#7A5B22;font-size:12.5px;border-radius:11px;padding:10px 14px;line-height:1.9}
+
+/* ---------- Bottom nav (mobile) ---------- */
+.bottom-nav{display:none}
+@media (max-width:900px){
+  .prod-grid{grid-template-columns:repeat(3,1fr)}
+  .pd{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+  .features{grid-template-columns:repeat(2,1fr)}
+  .footer-in{grid-template-columns:1fr 1fr}
+  .dash-grid{grid-template-columns:1fr}
+}
+@media (max-width:768px){
+  .main-nav,.header-search{display:none}
+  .body-pad{padding-bottom:76px}
+  .bottom-nav{display:flex;position:fixed;bottom:0;right:0;left:0;background:#fff;border-top:1px solid var(--line);z-index:55;box-shadow:0 -6px 20px rgba(42,27,18,.08);padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+  .bottom-nav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10.5px;font-weight:700;color:var(--muted);padding:5px 0;border-radius:10px}
+  .bottom-nav a .bn-ico{font-size:20px;line-height:1.2}
+  .bottom-nav a.active{color:var(--caramel)}
+  .bottom-nav a.active .bn-ico{transform:translateY(-1px)}
+  .bn-cart{position:relative}
+  .bn-cart .cart-count{top:-4px;left:8px}
+  .hero-in{padding:34px 24px}
+  .hero h1{font-size:27px}
+  .cart-layout,.checkout-layout{grid-template-columns:1fr}
+  .summary-card{position:static}
+  .prod-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .p-name{font-size:13px;min-height:41px}
+  .price .new{font-size:13.5px}
+  .cat-grid{grid-template-columns:1fr;gap:10px}
+  .cat-card{min-height:96px}
+  .features{grid-template-columns:1fr 1fr;gap:10px}
+  .feature{padding:13px}
+  .stat-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .admin-layout{grid-template-columns:1fr}
+  .sidebar{position:static;height:auto;flex-direction:row;align-items:center;overflow-x:auto;padding:10px 12px;gap:6px}
+  .sidebar .logo{margin:0 6px 0 0;font-size:17px}
+  .sidebar .logo small{display:none}
+  .side-link{white-space:nowrap;padding:9px 13px}
+  .side-sep,.side-out{display:none}
+  .admin-main{padding:18px 14px 90px}
+  .form-row,.gw-row{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr;gap:20px;padding:32px 0 22px}
+  .pd{padding:16px}
+  .section{margin:30px 0}
+  .section-head h2{font-size:18px}
+}
+</style>
+</head>
+<body>
+<div id="app" class="body-pad"></div>
+<div id="toast-wrap" class="toast-wrap"></div>
+<div id="modal-root"></div>
+
+<script>
+/* ================= veniz shop — core ================= */
+'use strict';
+
+/* ---------- helpers ---------- */
+const $ = (s, el) => (el || document).querySelector(s);
+const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fa = n => Number(n || 0).toLocaleString('fa-IR');
+const money = n => fa(n) + ' تومان';
+const faDate = iso => { try { return new Date(iso).toLocaleDateString('fa-IR', {year:'numeric',month:'long',day:'numeric'}); } catch(e){ return ''; } };
+const faTime = iso => { try { return new Date(iso).toLocaleTimeString('fa-IR', {hour:'2-digit',minute:'2-digit'}); } catch(e){ return ''; } };
+const uid = () => 'id' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const IMG_FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23F2EADD'/%3E%3Ctext x='100' y='115' font-size='64' text-anchor='middle'%3E%E2%98%95%3C/text%3E%3C/svg%3E";
+const imgTag = (src, cls, alt) => `<img ${cls ? 'class="' + cls + '" ' : ''}src="${esc(src || IMG_FALLBACK)}" alt="${esc(alt || '')}" loading="lazy" onerror="this.onerror=null;this.src='${IMG_FALLBACK}'">`;
+
+function toast(msg, type) {
+  const w = $('#toast-wrap');
+  const t = document.createElement('div');
+  t.className = 'toast ' + (type || '');
+  t.textContent = msg;
+  w.appendChild(t);
+  setTimeout(() => { t.style.opacity = '0'; t.style.transition = '.4s'; setTimeout(() => t.remove(), 400); }, 2600);
+}
+function openModal(html, small) {
+  closeModal();
+  const r = $('#modal-root');
+  r.innerHTML = `<div class="modal-backdrop" onclick="if(event.target===this)closeModal()"><div class="modal ${small ? 'modal-sm' : ''}">${html}</div></div>`;
+}
+function closeModal() { $('#modal-root').innerHTML = ''; }
+function confirmBox(msg, onYes) {
+  window.__confirmCb = onYes;
+  openModal(`
+    <div class="m-head"><h3>تأیید عملیات</h3><button class="m-close" onclick="closeModal()">✕</button></div>
+    <div class="m-body">
+      <p style="font-size:14px;color:#5B4B3C;margin-bottom:20px">${esc(msg)}</p>
+      <div style="display:flex;gap:10px;justify-content:flex-end">
+        <button class="btn btn-ghost" onclick="closeModal()">انصراف</button>
+        <button class="btn btn-danger" onclick="closeModal();window.__confirmCb && window.__confirmCb()">بله، انجام بده</button>
+      </div>
+    </div>`, true);
+}
+
+/* ---------- storage ---------- */
+const DB = {
+  get(k, def) { try { const v = localStorage.getItem(k); return v === null ? def : JSON.parse(v); } catch (e) { return def; } },
+  set(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
+};
+
+/* ---------- constants ---------- */
+const CATS = { coffee: 'قهوه', accessory: 'اکسسوری', machine: 'قهوه‌ساز' };
+const CAT_ICONS = { coffee: '🫘', accessory: '🫖', machine: '⚙️' };
+const ORDER_STATUS = { pending: 'در انتظار تأیید', processing: 'در حال پردازش', shipped: 'ارسال شده', delivered: 'تحویل شده', canceled: 'لغو شده' };
+const PAY_STATUS = { paid: 'پرداخت شده', pending: 'در انتظار پرداخت', cod: 'پرداخت در محل' };
+
+/* ---------- seed data ---------- */
+function seedIfEmpty() {
+  if (!DB.get('veniz_settings')) DB.set('veniz_settings', { shippingCost: 65000, freeShipping: 500000 });
+  if (!DB.get('veniz_products')) DB.set('veniz_products', [
+    { id: 'p1', name: 'قهوه اسپرسو بلند ونیز — ۲۵۰ گرم', category: 'coffee', price: 485000, oldPrice: 540000, stock: 40, featured: true, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f04b961136fa.png', desc: 'میکس عربیکا و روبوستای باکیفیت با رست متوسط-تیره؛ مناسب اسپرسوساز، موکاپات و کاپوچینوساز. کرمای غلیظ، عطر شکلاتی با ته‌مزه کارامل. تاریخ رست: کمتر از یک ماه.', createdAt: Date.now() - 86400000 * 30 },
+    { id: 'p2', name: 'قهوه اسپرسو بلند ونیز — ۱ کیلوگرم', category: 'coffee', price: 1690000, oldPrice: 0, stock: 25, featured: true, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/4d347e44bdd4.jpg', desc: 'بسته‌بندی اقتصادی یک کیلوگرمی همان اسپرسو بلند محبوب ونیز؛ انتخاب اول کافه‌های کوچک و مصرف خانوادگی. با بسته‌بندی زیپ‌دار و سوپاپ هوا برای حفظ تازگی.', createdAt: Date.now() - 86400000 * 29 },
+    { id: 'p3', name: 'قهوه ترک‌ساز ونیز — ۲۵۰ گرم', category: 'coffee', price: 390000, oldPrice: 0, stock: 30, featured: false, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b4d22412cb94.png', desc: 'رست تیره با آسیاب فوق ریز، مخصوص دم‌آوری سنتی ترکی و قهوه‌جوش. بدنه غلیظ، عطر تلخ-شیرین متعادل و ماندگاری بالا.', createdAt: Date.now() - 86400000 * 27 },
+    { id: 'p4', name: 'قهوه تک‌خاستگاه برزیل سانتوس ونیز — ۲۵۰ گرم', category: 'coffee', price: 620000, oldPrice: 690000, stock: 18, featured: true, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2fd58d528730.jpg', desc: 'صددرصد عربیکا از مزارع سانتوس برزیل؛ رست متوسط با نت‌های آجیل و شکلات شیری، اسیدیته پایین و بدنه لطیف. مناسب دم‌آوری V60 و فرنچ‌پرس.', createdAt: Date.now() - 86400000 * 25 },
+    { id: 'p5', name: 'قهوه لوانت ونیز (میکس عربیکا ۸۰٪) — ۲۵۰ گرم', category: 'coffee', price: 540000, oldPrice: 0, stock: 22, featured: false, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a86e6460f040.jpg', desc: 'بلند لایت با ۸۰ درصد عربیکا؛ مناسب دوست‌داران قهوه با اسیدیته ملایم و عطر میوه‌ای. انتخابی عالی برای دم‌آوری قطره‌ای و پورآور.', createdAt: Date.now() - 86400000 * 22 },
+    { id: 'p6', name: 'فرنچ پرس ونیز ۳۵۰ میلی‌لیتری', category: 'accessory', price: 890000, oldPrice: 990000, stock: 15, featured: true, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/165a0ecb87f3.jpg', desc: 'بدنه پیرکس مقاوم با فیلتر استیل ضدزنگ و دسته‌ی ارگونومیک؛ دم‌آوری ۴ فنجان قهوه در کمتر از ۵ دقیقه، بدون نیاز به فیلتر کاغذی.', createdAt: Date.now() - 86400000 * 20 },
+    { id: 'p7', name: 'ست دراپر V60 ونیز + سرنگ مخصوص', category: 'accessory', price: 780000, oldPrice: 0, stock: 12, featured: false, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a1811713cc75.png', desc: 'دراپر سرامیکی با طراحی مارپیچ داخلی برای عصاره‌گیری یکنواخت، همراه کتری و سرنگ اندازه‌گیری؛ کیت کامل پورآور برای شروع قهوه تخصصی.', createdAt: Date.now() - 86400000 * 18 },
+    { id: 'p8', name: 'آسیاب دستی قهوه ونیز — تیغه فولادی', category: 'accessory', price: 1980000, oldPrice: 2250000, stock: 8, featured: true, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3f6883aca567.jpg', desc: 'تیغه‌های فولادی سرامیکی با ۱۵ درجه تنظیم درشت‌ورد آسیاب؛ از قهوه ترک تا فرنچ‌پرس. بدنه آلومینیومی و کیس حمل مسافرتی.', createdAt: Date.now() - 86400000 * 15 },
+    { id: 'p9', name: 'فروتر شیر برقی ونیز', category: 'accessory', price: 690000, oldPrice: 0, stock: 14, featured: false, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c4edf1072e59.jpg', desc: 'ساخت فوم شیر غلیظ برای لاته و کاپوچینو در ۲ دقیقه؛ گرم‌کن غیرمستقیم، ضدچکیدن و قابل شست‌وشو.', createdAt: Date.now() - 86400000 * 12 },
+    { id: 'p10', name: 'موکاپات ونیز ۳ فنجانه', category: 'machine', price: 1450000, oldPrice: 1580000, stock: 10, featured: true, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/825a946ebbbc.jpg', desc: 'موکاپات ایتالیایی با بدنه آلومینیوم ریختگی و دسته‌ی نسوز؛ مناسب اجاق گاز و برقی. تهیه ۳ فنجان اسپرسو غلیظ در ۴ دقیقه.', createdAt: Date.now() - 86400000 * 10 },
+    { id: 'p11', name: 'قهوه‌ساز اسپرسو ونیز مدل V-200', category: 'machine', price: 18500000, oldPrice: 19900000, stock: 5, featured: true, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/9de683af9419.jpg', desc: 'پمپ ۲۰ بار ایتالیایی با بویلر استیل، بخارجوش حرفه‌ای برای فوم شیر و مخزن ۱.۵ لیتری؛ همراه فیلتر پود و کپسول. ۲۴ ماه گارانتی ونیز.', createdAt: Date.now() - 86400000 * 7 },
+    { id: 'p12', name: 'کاپوچینوساز ونیز مدل C-100', category: 'machine', price: 12400000, oldPrice: 0, stock: 4, featured: false, image: 'https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2c61112e29e9.jpg', desc: 'قهوه‌ساز و کاپوچینوساز خانگی با فیلتر دائمی، بخارجوش چرخان و سیستم پیش‌گرم فنجان؛ طراحی جمع‌وجور مناسب آشپزخانه.', createdAt: Date.now() - 86400000 * 4 }
+  ]);
+  if (!DB.get('veniz_users')) DB.set('veniz_users', []);
+  if (!DB.get('veniz_orders')) DB.set('veniz_orders', []);
+}
+
+/* ---------- data access ---------- */
+const getProducts = () => DB.get('veniz_products', []);
+const saveProducts = p => DB.set('veniz_products', p);
+const getUsers = () => DB.get('veniz_users', []);
+const saveUsers = u => DB.set('veniz_users', u);
+const getOrders = () => DB.get('veniz_orders', []);
+const saveOrders = o => DB.set('veniz_orders', o);
+const getSettings = () => DB.get('veniz_settings', { shippingCost: 65000, freeShipping: 500000 });
+const getProduct = id => getProducts().find(p => p.id === id);
+
+/* ---------- auth ---------- */
+const ADMIN_USER = 'admin';
+const ADMIN_PASS = 'veniz1404';
+function currentUser() {
+  const sid = DB.get('veniz_session', null);
+  if (!sid) return null;
+  return getUsers().find(u => u.id === sid) || null;
+}
+function isAdmin() { return DB.get('veniz_admin', false) === true; }
+function registerUser(name, phone, pass) {
+  const users = getUsers();
+  if (users.some(u => u.phone === phone)) return { err: 'این شماره قبلاً ثبت‌نام کرده است. وارد شوید.' };
+  const u = { id: uid(), name, phone, pass, createdAt: new Date().toISOString() };
+  users.push(u);
+  saveUsers(users);
+  DB.set('veniz_session', u.id);
+  return { ok: true, user: u };
+}
+function loginUser(phone, pass) {
+  const u = getUsers().find(x => x.phone === phone);
+  if (!u || u.pass !== pass) return { err: 'شماره موبایل یا رمز عبور اشتباه است.' };
+  DB.set('veniz_session', u.id);
+  return { ok: true, user: u };
+}
+function logoutUser() { localStorage.removeItem('veniz_session'); }
+function adminLogin(user, pass) {
+  if (user !== ADMIN_USER || pass !== ADMIN_PASS) return { err: 'نام کاربری یا رمز ادمین اشتباه است.' };
+  DB.set('veniz_admin', true);
+  return { ok: true };
+}
+function adminLogout() { localStorage.removeItem('veniz_admin'); }
+
+/* ---------- cart ---------- */
+const getCart = () => DB.get('veniz_cart', []);
+const saveCart = c => DB.set('veniz_cart', c);
+function cartCount() { return getCart().reduce((s, i) => s + i.qty, 0); }
+function cartSubtotal() {
+  return getCart().reduce((s, i) => {
+    const p = getProduct(i.id);
+    return p ? s + p.price * i.qty : s;
+  }, 0);
+}
+function shippingOf(subtotal) {
+  const st = getSettings();
+  return subtotal >= st.freeShipping ? 0 : st.shippingCost;
+}
+function addToCart(id, qty) {
+  const p = getProduct(id);
+  if (!p) return toast('محصول یافت نشد', 'err');
+  if (p.stock <= 0) return toast('این محصول ناموجود است', 'err');
+  qty = Math.max(1, qty || 1);
+  const cart = getCart();
+  const it = cart.find(i => i.id === id);
+  const cur = it ? it.qty : 0;
+  if (cur + qty > p.stock) { toast('بیشتر از موجودی انبار نمی‌توان سفارش داد', 'err'); qty = p.stock - cur; if (qty <= 0) return; }
+  if (it) it.qty += qty; else cart.push({ id, qty });
+  saveCart(cart);
+  updateBadges();
+  toast('به سبد خرید اضافه شد ✓', 'ok');
+}
+function setCartQty(id, qty) {
+  const p = getProduct(id);
+  if (!p) return;
+  qty = Math.max(1, Math.min(qty, p.stock, 99));
+  const cart = getCart();
+  const it = cart.find(i => i.id === id);
+  if (it) { it.qty = qty; saveCart(cart); }
+  route();
+}
+function removeFromCart(id) {
+  saveCart(getCart().filter(i => i.id !== id));
+  updateBadges();
+  route();
+}
+function clearCart() { saveCart([]); updateBadges(); }
+function updateBadges() {
+  $$('.cart-count').forEach(el => {
+    const c = cartCount();
+    el.textContent = fa(c);
+    el.style.display = c ? 'flex' : 'none';
+  });
+}
+
+/* ---------- orders ---------- */
+function createOrder({ customer, payMethod, note }) {
+  const cart = getCart();
+  if (!cart.length) return null;
+  const products = getProducts();
+  // validate stock again
+  for (const it of cart) {
+    const p = products.find(x => x.id === it.id);
+    if (!p || p.stock < it.qty) { toast('موجودی «' + (p ? p.name : it.id) + '» کافی نیست', 'err'); return null; }
+  }
+  for (const it of cart) {
+    const p = products.find(x => x.id === it.id);
+    p.stock -= it.qty;
+  }
+  saveProducts(products);
+  const subtotal = cart.reduce((s, i) => s + getProduct(i.id).price * i.qty, 0);
+  const seq = DB.get('veniz_seq', 1000);
+  DB.set('veniz_seq', seq + 1);
+  const order = {
+    id: uid(),
+    code: 'VNZ-' + seq,
+    userId: currentUser() ? currentUser().id : null,
+    items: cart.map(i => { const p = getProduct(i.id); return { productId: i.id, name: p.name, price: p.price, qty: i.qty, image: p.image }; }),
+    subtotal,
+    shipping: shippingOf(subtotal),
+    total: subtotal + shippingOf(subtotal),
+    payMethod,
+    payStatus: payMethod === 'cod' ? 'cod' : 'pending',
+    status: 'pending',
+    customer,
+    note: note || '',
+    createdAt: new Date().toISOString(),
+    history: [{ at: new Date().toISOString(), txt: 'ثبت سفارش' }]
+  };
+  const orders = getOrders();
+  orders.unshift(order);
+  saveOrders(orders);
+  clearCart();
+  return order;
+}
+function setOrderStatus(id, status) {
+  const orders = getOrders();
+  const o = orders.find(x => x.id === id);
+  if (!o) return;
+  if (status === 'canceled' && o.status !== 'canceled') {
+    // restock
+    const products = getProducts();
+    o.items.forEach(it => { const p = products.find(x => x.id === it.productId); if (p) p.stock += it.qty; });
+    saveProducts(products);
+  }
+  if (o.status === 'canceled' && status !== 'canceled') {
+    // re-cancel protection: take stock back
+    const products = getProducts();
+    o.items.forEach(it => { const p = products.find(x => x.id === it.productId); if (p) p.stock = Math.max(0, p.stock - it.qty); });
+    saveProducts(products);
+  }
+  o.status = status;
+  o.history = o.history || [];
+  o.history.push({ at: new Date().toISOString(), txt: 'تغییر وضعیت به «' + ORDER_STATUS[status] + '»' });
+  saveOrders(orders);
+}
+
+/* ================= router & public views ================= */
+
+function go(h) { location.hash = h; }
+
+/* ---------- chrome ---------- */
+function logoHTML(light) {
+  return `<a class="logo" href="#/"><span class="bean">☕</span><span>veniz<small>${light ? 'coffee & more' : 'فروشگاه قهوه ونیز'}</small></span></a>`;
+}
+function headerHTML(active) {
+  const u = currentUser();
+  const c = cartCount();
+  return `
+  <header class="site-header"><div class="container header-in">
+    ${logoHTML()}
+    <nav class="main-nav">
+      <a href="#/" class="${active === 'home' ? 'active' : ''}">خانه</a>
+      <a href="#/shop" class="${active === 'shop' ? 'active' : ''}">فروشگاه</a>
+      <a href="#/shop" onclick="APP.shopNav('coffee')">قهوه</a>
+      <a href="#/shop" onclick="APP.shopNav('accessory')">اکسسوری</a>
+      <a href="#/shop" onclick="APP.shopNav('machine')">قهوه‌ساز</a>
+    </nav>
+    <form class="header-search" onsubmit="return APP.search(event)">
+      <input type="text" id="globalQ" placeholder="جست‌وجو در محصولات..." autocomplete="off">
+      <span class="s-ico">🔍</span>
+    </form>
+    <div class="header-actions">
+      <a class="icon-btn" href="#/cart" title="سبد خرید">🛒<span class="cart-count" style="display:${c ? 'flex' : 'none'}">${fa(c)}</span></a>
+      ${u
+        ? `<button class="user-chip" onclick="APP.toggleUserMenu(event)">👤 <span>${esc(u.name)}</span></button>`
+        : `<a class="btn btn-primary btn-sm" href="#/auth">ورود / عضویت</a>`}
+    </div>
+  </div></header>
+  ${u ? `<div id="userMenu" style="display:none;position:fixed;z-index:60"></div>` : ''}`;
+}
+function userMenuHTML() {
+  const u = currentUser();
+  return `<div class="user-menu">
+    <div class="um-head">حساب کاربری<b>${esc(u.name)}</b>${esc(u.phone)}</div>
+    <a href="#/account">📦 سفارش‌های من</a>
+    <a href="#/account">👤 اطلاعات حساب</a>
+    <button onclick="APP.logout()">🚪 خروج از حساب</button>
+  </div>`;
+}
+function bottomNavHTML(active) {
+  const c = cartCount();
+  return `
+  <nav class="bottom-nav">
+    <a href="#/" class="${active === 'home' ? 'active' : ''}"><span class="bn-ico">🏠</span>خانه</a>
+    <a href="#/shop" class="${active === 'shop' ? 'active' : ''}"><span class="bn-ico">🛍️</span>فروشگاه</a>
+    <a href="#/cart" class="${active === 'cart' ? 'active' : ''} bn-cart"><span class="bn-ico">🛒</span>سبد خرید<span class="cart-count" style="display:${c ? 'flex' : 'none'}">${fa(c)}</span></a>
+    <a href="#/account" class="${active === 'account' ? 'active' : ''}"><span class="bn-ico">👤</span>حساب من</a>
+  </nav>`;
+}
+function footerHTML() {
+  return `
+  <footer class="site-footer"><div class="container">
+    <div class="footer-in">
+      <div class="footer-brand">
+        ${logoHTML(true)}
+        <p>ونیز، برند تخصصی قهوه؛ از انتخاب دانه‌های عربیکا و روبوستا تا رست تخصصی و بسته‌بندی تازه. قهوه، اکسسوری و قهوه‌ساز — همه در یک جا برای فنجانی بهتر.</p>
+      </div>
+      <div>
+        <h4>دسترسی سریع</h4>
+        <a href="#/shop?cat=coffee">قهوه</a>
+        <a href="#/shop?cat=accessory">اکسسوری</a>
+        <a href="#/shop?cat=machine">قهوه‌ساز</a>
+        <a href="#/cart">سبد خرید</a>
+      </div>
+      <div>
+        <h4>حساب کاربری</h4>
+        <a href="#/auth">ورود / عضویت</a>
+        <a href="#/account">سفارش‌های من</a>
+        <a href="#/admin-login">ورود مدیر فروشگاه</a>
+      </div>
+      <div class="footer-contact">
+        <h4>ارتباط با ونیز</h4>
+        <div>📍 تهران، بازار قهوه، پلاک ۷</div>
+        <div>☎️ ۰۲۱-۹۱۰۰۰۰۰۰</div>
+        <div>✉️ hello@veniz.coffee</div>
+        <div>🕘 شنبه تا پنجشنبه، ۹ تا ۱۸</div>
+      </div>
+    </div>
+    <div class="footer-bottom">© ۱۴۰۴ veniz — تمامی حقوق محفوظ است. | ارسال رایگان برای خریدهای بالای ${money(getSettings().freeShipping)}</div>
+  </div></footer>`;
+}
+
+/* ---------- shared components ---------- */
+function prodCard(p) {
+  const off = p.oldPrice && p.oldPrice > p.price ? Math.round((p.oldPrice - p.price) / p.oldPrice * 100) : 0;
+  return `
+  <div class="prod-card">
+    <div class="p-img" onclick="go('product/${p.id}')">
+      <div class="p-badges">
+        ${off ? `<span class="pbadge sale">٪${fa(off)} تخفیف</span>` : ''}
+        ${p.stock <= 0 ? '<span class="pbadge out">ناموجود</span>' : (p.stock <= 5 ? `<span class="pbadge out" style="background:#B58900">${fa(p.stock)} عدد باقی مانده</span>` : '')}
+        ${p.featured ? '<span class="pbadge feat">★ ویژه</span>' : ''}
+      </div>
+      ${imgTag(p.image, '', p.name)}
+    </div>
+    <div class="p-body">
+      <span class="p-cat">${CAT_ICONS[p.category]} ${CATS[p.category]}</span>
+      <div class="p-name" onclick="go('product/${p.id}')">${esc(p.name)}</div>
+      <div class="p-foot">
+        <div class="price">
+          <span class="new">${fa(p.price)} <small>تومان</small></span>
+          ${p.oldPrice && p.oldPrice > p.price ? `<span class="old">${fa(p.oldPrice)}</span>` : ''}
+        </div>
+        <button class="add-btn" onclick="addToCart('${p.id}',1);event.stopPropagation()" ${p.stock <= 0 ? 'disabled' : ''} title="افزودن به سبد">+</button>
+      </div>
+    </div>
+  </div>`;
+}
+function emptyBox(icon, title, text, btn) {
+  return `<div class="empty-state"><div class="e-ico">${icon}</div><b>${title}</b><p>${text}</p>${btn || ''}</div>`;
+}
+
+/* ---------- home ---------- */
+function homeView() {
+  const products = getProducts();
+  const feat = products.filter(p => p.featured).slice(0, 8);
+  const cnt = c => products.filter(p => p.category === c).length;
+  return `
+  <div class="container">
+    <section class="hero">
+      <div class="hero-in">
+        <span class="hero-tag">☕ برند تخصصی قهوه veniz</span>
+        <h1>هر فنجان، یک سفر به <em>قلب ایتالیا</em></h1>
+        <p>قهوه تازه‌رست، اکسسوری تخصصی و قهوه‌سازهای اورجینال؛ با ارسال سریع به سراسر ایران و ضمانت اصالت کالا.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold btn-lg" href="#/shop">شروع خرید 🛍️</a>
+          <a class="btn btn-outline btn-lg" style="border-color:#D9A441;color:#D9A441" href="#/auth">عضویت در ونیز</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="features">
+      <div class="feature"><div class="f-ico">🚚</div><div><b>ارسال رایگان</b><small>برای خریدهای بالای ${money(getSettings().freeShipping)}</small></div></div>
+      <div class="feature"><div class="f-ico">🛡️</div><div><b>ضمانت اصالت</b><small>کالای اورجینال با فاکتور رسمی</small></div></div>
+      <div class="feature"><div class="f-ico">💳</div><div><b>پرداخت امن</b><small>درگاه بانکی و پرداخت در محل</small></div></div>
+      <div class="feature"><div class="f-ico">📞</div><div><b>پشتیبانی واقعی</b><small>پاسخ‌گویی ۷ روز هفته</small></div></div>
+    </div>
+
+    <section class="section">
+      <div class="section-head"><h2>دسته‌بندی محصولات</h2></div>
+      <div class="cat-grid">
+        <a class="cat-card c1" href="#/shop" onclick="SHOP.cat='coffee';SHOP.q=''"><span class="cc-ico">🫘</span><h3>قهوه</h3><small>${fa(cnt('coffee'))} محصول — اسپرسو، ترک، تک‌خاستگاه</small></a>
+        <a class="cat-card c2" href="#/shop" onclick="SHOP.cat='accessory';SHOP.q=''"><span class="cc-ico">🫖</span><h3>اکسسوری</h3><small>${fa(cnt('accessory'))} محصول — آسیاب، دراپر، فرنچ‌پرس</small></a>
+        <a class="cat-card c3" href="#/shop" onclick="SHOP.cat='machine';SHOP.q=''"><span class="cc-ico">⚙️</span><h3>قهوه‌ساز</h3><small>${fa(cnt('machine'))} محصول — اسپرسوساز، موکاپات و...</small></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>محصولات ویژه</h2><a href="#/shop">مشاهده همه ←</a></div>
+      ${feat.length ? `<div class="prod-grid">${feat.map(prodCard).join('')}</div>` : emptyBox('☕', 'هنوز محصولی ثبت نشده', 'محصولات از پنل مدیریت اضافه می‌شوند.')}
+    </section>
+  </div>`;
+}
+
+/* ---------- shop ---------- */
+const SHOP = { q: '', cat: 'all', sort: 'new' };
+
+function shopFiltered() {
+  let list = getProducts();
+  if (SHOP.cat !== 'all') list = list.filter(p => p.category === SHOP.cat);
+  if (SHOP.q) {
+    const q = SHOP.q.trim().toLowerCase();
+    list = list.filter(p => (p.name + ' ' + (p.desc || '')).toLowerCase().includes(q));
+  }
+  if (SHOP.sort === 'cheap') list = list.slice().sort((a, b) => a.price - b.price);
+  else if (SHOP.sort === 'expensive') list = list.slice().sort((a, b) => b.price - a.price);
+  else list = list.slice().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+  return list;
+}
+function shopToolbarHTML() {
+  const chip = (key, label) => `<button class="chip ${SHOP.cat === key ? 'active' : ''}" onclick="APP.shopCat('${key}')">${label}</button>`;
+  return `
+  <div class="toolbar">
+    <div class="chips">
+      ${chip('all', 'همه')} ${chip('coffee', '☕ قهوه')} ${chip('accessory', '🫖 اکسسوری')} ${chip('machine', '⚙️ قهوه‌ساز')}
+    </div>
+    <input class="form-control" style="max-width:250px" type="text" id="shopQ" placeholder="جست‌وجو..." value="${esc(SHOP.q)}" oninput="APP.shopQ(this.value)">
+    <select class="form-control sort-select" onchange="APP.shopSort(this.value)">
+      <option value="new" ${SHOP.sort === 'new' ? 'selected' : ''}>جدیدترین</option>
+      <option value="cheap" ${SHOP.sort === 'cheap' ? 'selected' : ''}>ارزان‌ترین</option>
+      <option value="expensive" ${SHOP.sort === 'expensive' ? 'selected' : ''}>گران‌ترین</option>
+    </select>
+  </div>`;
+}
+function shopView(params) {
+  if (params.cat) SHOP.cat = params.cat;
+  if (params.q !== undefined) SHOP.q = params.q;
+  if (!params.cat && params.q === undefined && params.reset) { SHOP.cat = 'all'; SHOP.q = ''; }
+  const title = SHOP.cat === 'all' ? 'همه محصولات' : 'دسته‌بندی ' + CATS[SHOP.cat];
+  return `
+  <div class="container">
+    <div class="crumbs"><a href="#/">خانه</a> / فروشگاه / ${title}</div>
+    <div class="section-head"><h2>فروشگاه ونیز</h2><span class="count-note" id="shopCount"></span></div>
+    ${shopToolbarHTML()}
+    <div id="shopGrid"></div>
+  </div>`;
+}
+function shopGridHTML() {
+  const list = shopFiltered();
+  return list.length
+    ? `<div class="prod-grid">${list.map(prodCard).join('')}</div>`
+    : emptyBox('🔍', 'محصولی پیدا نشد', 'عبارت دیگری را جست‌وجو کنید یا دسته‌بندی را تغییر دهید.');
+}
+function __refreshShopGrid() {
+  const g = $('#shopGrid');
+  if (g) g.innerHTML = shopGridHTML();
+  const cnt = $('#shopCount');
+  if (cnt) cnt.textContent = fa(shopFiltered().length) + ' محصول';
+}
+
+/* ---------- product detail ---------- */
+function productView(id) {
+  const p = getProduct(id);
+  if (!p) return `<div class="container">${emptyBox('❓', 'محصول یافت نشد', 'ممکن است حذف شده باشد.', '<a class="btn btn-primary" href="#/shop">بازگشت به فروشگاه</a>')}</div>`;
+  const off = p.oldPrice && p.oldPrice > p.price ? Math.round((p.oldPrice - p.price) / p.oldPrice * 100) : 0;
+  const related = getProducts().filter(x => x.category === p.category && x.id !== p.id).slice(0, 4);
+  return `
+  <div class="container">
+    <div class="crumbs"><a href="#/">خانه</a> / <a href="#/shop" onclick="SHOP.cat='${p.category}';SHOP.q=''">${CATS[p.category]}</a> / ${esc(p.name)}</div>
+    <div class="pd">
+      <div class="pd-img">${imgTag(p.image, '', p.name)}</div>
+      <div class="pd-info">
+        <span class="p-cat">${CAT_ICONS[p.category]} ${CATS[p.category]} ${p.featured ? '· ★ محصول ویژه ونیز' : ''}</span>
+        <h1>${esc(p.name)}</h1>
+        <div class="pd-price">
+          <span class="new">${fa(p.price)} <small>تومان</small></span>
+          ${p.oldPrice && p.oldPrice > p.price ? `<span class="old">${fa(p.oldPrice)}</span><span class="pbadge sale">٪${fa(off)} تخفیف</span>` : ''}
+        </div>
+        <div class="pd-meta">
+          <span>موجودی انبار: ${p.stock > 0 ? `<b>${fa(p.stock)} عدد</b>` : '<span style="color:var(--danger);font-weight:800">ناموجود</span>'}</span>
+          <span>ارسال: ${p.price >= getSettings().freeShipping ? '<b>رایگان</b>' : money(getSettings().shippingCost)}</span>
+          <span>گارانتی اصالت و سلامت کالا</span>
+        </div>
+        <p class="pd-desc">${esc(p.desc)}</p>
+        ${p.stock > 0 ? `
+        <div class="buy-row">
+          <div class="qty-stepper">
+            <button onclick="APP.pdQty(1)">+</button>
+            <input id="pdQty" type="number" value="1" min="1" max="${p.stock}">
+            <button onclick="APP.pdQty(-1)">−</button>
+          </div>
+          <button class="btn btn-primary btn-lg" onclick="APP.buyNow('${p.id}')">افزودن به سبد خرید 🛒</button>
+          <button class="btn btn-dark btn-lg" onclick="APP.buyNow('${p.id}',true)">خرید فوری</button>
+        </div>
+        <p class="stock-note ${p.stock <= 5 ? 'low' : 'ok'}" style="margin-top:12px">${p.stock <= 5 ? '⚠️ تنها ' + fa(p.stock) + ' عدد در انبار باقی مانده است' : '✓ موجود در انبار — ارسال از تهران'}</p>`
+        : `<div class="alert-note">این محصول فعلاً ناموجود است. به‌زودی دوباره شارژ می‌شود.</div>`}
+      </div>
+    </div>
+    ${related.length ? `
+    <section class="section">
+      <div class="section-head"><h2>محصولات مشابه</h2></div>
+      <div class="prod-grid">${related.map(prodCard).join('')}</div>
+    </section>` : ''}
+  </div>`;
+}
+
+/* ================= cart, checkout, pay, auth, account ================= */
+
+/* ---------- cart ---------- */
+function cartView() {
+  const cart = getCart().map(i => ({ ...i, p: getProduct(i.id) })).filter(i => i.p);
+  if (!cart.length) {
+    return `<div class="container">${emptyBox('🛒', 'سبد خرید شما خالی است', 'از فروشگاه محصولات موردنظرتان را اضافه کنید.', '<a class="btn btn-primary" href="#/shop">رفتن به فروشگاه</a>')}</div>`;
+  }
+  const subtotal = cart.reduce((s, i) => s + i.p.price * i.qty, 0);
+  const st = getSettings();
+  const remain = Math.max(0, st.freeShipping - subtotal);
+  return `
+  <div class="container">
+    <div class="section-head"><h2>سبد خرید</h2><span class="count-note">${fa(cart.length)} قلم کالا</span></div>
+    <div class="cart-layout">
+      <div class="cart-items">
+        ${cart.map(i => `
+        <div class="cart-item">
+          ${imgTag(i.p.image, '', i.p.name)}
+          <div class="ci-info">
+            <div class="n" onclick="go('product/${i.p.id}')">${esc(i.p.name)}</div>
+            <div class="p">${money(i.p.price)} × ${fa(i.qty)}</div>
+            <button class="ci-remove" onclick="confirmBox('این محصول از سبد حذف شود؟',()=>removeFromCart('${i.id}'))">🗑 حذف</button>
+          </div>
+          <div class="qty-stepper">
+            <button onclick="APP.cartQty('${i.id}',1)">+</button>
+            <input type="number" value="${i.qty}" min="1" max="${i.p.stock}" onchange="APP.cartSet('${i.id}',this.value)">
+            <button onclick="APP.cartQty('${i.id}',-1)">−</button>
+          </div>
+          <div class="ci-total">${money(i.p.price * i.qty)}</div>
+        </div>`).join('')}
+      </div>
+      <div class="summary-card">
+        <h3>خلاصه سفارش</h3>
+        <div class="sum-row"><span>مبلغ کالاها</span><b>${money(subtotal)}</b></div>
+        <div class="sum-row"><span>هزینه ارسال</span><b>${subtotal >= st.freeShipping ? 'رایگان 🎉' : money(st.shippingCost)}</b></div>
+        ${remain > 0 ? `<div class="free-bar"><div style="width:${Math.min(100, Math.round(subtotal / st.freeShipping * 100))}%"></div></div>
+        <p class="free-note"><b>${money(remain)}</b> دیگر تا ارسال رایگان!</p>` : `<p class="free-note" style="color:var(--green);font-weight:700">✓ ارسال سفارش شما رایگان است</p>`}
+        <div class="sum-row total"><span>مبلغ قابل پرداخت</span><span>${money(subtotal + shippingOf(subtotal))}</span></div>
+        <div style="margin-top:16px;display:grid;gap:8px">
+          <button class="btn btn-primary btn-lg btn-block" onclick="APP.goCheckout()">ادامه ثبت سفارش ←</button>
+          <a class="btn btn-ghost btn-block" href="#/shop">ادامه خرید</a>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------- checkout ---------- */
+function checkoutView() {
+  const u = currentUser();
+  if (!u) { go('auth?next=checkout'); return '<div class="container"></div>'; }
+  const cart = getCart();
+  if (!cart.length) { go('cart'); return '<div class="container"></div>'; }
+  const subtotal = cartSubtotal();
+  const st = getSettings();
+  return `
+  <div class="container">
+    <div class="section-head"><h2>تکمیل سفارش</h2></div>
+    <div class="checkout-layout">
+      <div>
+        <div class="panel" style="margin-bottom:16px">
+          <h3><span class="step-n">۱</span> اطلاعات گیرنده</h3>
+          <div id="coErr"></div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">نام و نام خانوادگی *</label><input class="form-control" id="coName" value="${esc(u.name)}"></div>
+            <div class="form-group"><label class="form-label">شماره موبایل *</label><input class="form-control" id="coPhone" value="${esc(u.phone)}" inputmode="tel"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">شهر *</label><input class="form-control" id="coCity" placeholder="مثلاً تهران"></div>
+            <div class="form-group"><label class="form-label">کد پستی</label><input class="form-control" id="coZip" inputmode="numeric"></div>
+          </div>
+          <div class="form-group"><label class="form-label">نشانی کامل *</label><textarea class="form-control" id="coAddr" placeholder="خیابان، کوچه، پلاک، واحد..."></textarea></div>
+          <div class="form-group" style="margin-bottom:0"><label class="form-label">توضیحات سفارش (اختیاری)</label><input class="form-control" id="coNote" placeholder="مثلاً آسیاب شود / بعد از ساعت ۵ تحویل داده شود"></div>
+        </div>
+        <div class="panel">
+          <h3><span class="step-n">۲</span> روش پرداخت</h3>
+          <div class="pay-opts">
+            <label class="pay-opt sel" id="payOptOnline" onclick="APP.pickPay('online')">
+              <input type="radio" name="payMethod" value="online" checked>
+              <span class="po-ico">💳</span>
+              <span><b>پرداخت آنلاین</b><small>پرداخت امن از طریق درگاه بانکی (درگاه آزمایشی)</small></span>
+            </label>
+            <label class="pay-opt" id="payOptCod" onclick="APP.pickPay('cod')">
+              <input type="radio" name="payMethod" value="cod">
+              <span class="po-ico">💵</span>
+              <span><b>پرداخت در محل</b><small>پرداخت نقدی یا کارت‌خوان هنگام تحویل سفارش</small></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <h3>خلاصه سفارش</h3>
+        ${cart.map(i => { const p = getProduct(i.id); return p ? `<div class="sum-row" style="font-size:12.5px"><span>${esc(p.name)} × ${fa(i.qty)}</span><b style="white-space:nowrap">${money(p.price * i.qty)}</b></div>` : ''; }).join('')}
+        <div class="sum-row"><span>مبلغ کالاها</span><b>${money(subtotal)}</b></div>
+        <div class="sum-row"><span>هزینه ارسال</span><b>${subtotal >= st.freeShipping ? 'رایگان 🎉' : money(st.shippingCost)}</b></div>
+        <div class="sum-row total"><span>مبلغ قابل پرداخت</span><span>${money(subtotal + shippingOf(subtotal))}</span></div>
+        <button class="btn btn-primary btn-lg btn-block" style="margin-top:16px" onclick="APP.placeOrder()">ثبت نهایی سفارش ✓</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------- fake payment gateway ---------- */
+function payView(orderId) {
+  const o = getOrders().find(x => x.id === orderId);
+  if (!o) return '<div class="container">' + emptyBox('❓', 'سفارش یافت نشد', '', '<a class="btn btn-primary" href="#/">بازگشت</a>') + '</div>';
+  if (o.payStatus === 'paid') { go('result/' + o.id); return ''; }
+  return `
+  <div class="container">
+    <div style="text-align:center;padding:18px 0">
+      <a class="logo" style="justify-content:center" href="#/"><span class="bean">☕</span><span>veniz<small>بازگشت به فروشگاه</small></span></a>
+    </div>
+    <div class="gateway">
+      <div class="gw-head">
+        <div><div class="t">درگاه پرداخت اینترنتی</div><small>محیط آزمایشی (سندباکس) — پرداخت واقعی انجام نمی‌شود</small></div>
+        <div style="font-size:30px">🏦</div>
+      </div>
+      <div class="gw-amount">
+        مبلغ قابل پرداخت
+        <b>${money(o.total)}</b>
+        <small>بابت سفارش ${esc(o.code)}</small>
+      </div>
+      <div class="gw-body">
+        <div class="form-group"><label class="form-label">شماره کارت</label><input class="form-control" id="gwCard" value="6037 9912 3456 7890" inputmode="numeric" style="letter-spacing:2px;direction:ltr;text-align:center"></div>
+        <div class="gw-row">
+          <div class="form-group"><label class="form-label">انقضا</label><input class="form-control" value="08/08" style="direction:ltr;text-align:center"></div>
+          <div class="form-group"><label class="form-label">CVV2</label><input class="form-control" value="123" style="direction:ltr;text-align:center"></div>
+        </div>
+        <div class="form-group"><label class="form-label">رمز پویا (یک‌بارمصرف)</label>
+          <div class="otp-row">
+            <input class="form-control" id="gwOtp" placeholder="کد را وارد کنید" style="direction:ltr;text-align:center">
+            <button class="btn btn-ghost" type="button" onclick="APP.sendOtp(this)">دریافت کد</button>
+          </div>
+          <p class="form-hint">در محیط آزمایشی کد ۱۲۳۴۵ را دریافت می‌کنید.</p>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block gw-pay" id="gwPayBtn" onclick="APP.payNow('${o.id}')">پرداخت ${money(o.total)}</button>
+        <div class="gw-secure">🔒 اطلاعات کارت شما در محیط آزمایشی ذخیره نمی‌شود</div>
+        <div style="text-align:center;margin-top:10px"><a class="link" href="#/result/${o.id}" style="font-size:12.5px;color:var(--muted)">انصراف از پرداخت</a></div>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------- order result ---------- */
+function resultView(orderId) {
+  const o = getOrders().find(x => x.id === orderId);
+  if (!o) return '<div class="container">' + emptyBox('❓', 'سفارش یافت نشد', '', '<a class="btn btn-primary" href="#/">بازگشت</a>') + '</div>';
+  let icon, cls, title, msg;
+  if (o.payStatus === 'paid') { cls = 'ok'; icon = '✓'; title = 'پرداخت با موفقیت انجام شد'; msg = 'سفارش شما ثبت شد و پس از تأیید، آماده‌سازی و ارسال می‌شود.'; }
+  else if (o.payMethod === 'cod') { cls = 'ok'; icon = '🤝'; title = 'سفارش شما با موفقیت ثبت شد'; msg = 'پرداخت شما در محل و هنگام تحویل سفارش انجام می‌شود.'; }
+  else { cls = 'warn'; icon = '⏳'; title = 'سفارش ثبت شد اما پرداخت انجام نشد'; msg = 'برای ارسال سریع‌تر، همین حالا پرداخت را تکمیل کنید یا از پنل کاربری اقدام کنید.'; }
+  return `
+  <div class="container">
+    <div class="result-wrap">
+      <div class="result-ico ${cls}">${icon}</div>
+      <h2>${title}</h2>
+      <p>${msg}</p>
+      <div class="result-code">کد سفارش: ${esc(o.code)}</div>
+      <p style="font-size:13px;color:var(--text)"><b>مبلغ:</b> ${money(o.total)} &nbsp;|&nbsp; <b>روش:</b> ${o.payMethod === 'cod' ? 'پرداخت در محل' : 'پرداخت آنلاین'}</p>
+      <div class="result-actions">
+        ${o.payStatus !== 'paid' && o.payMethod === 'online' ? `<button class="btn btn-gold" onclick="go('pay/${o.id}')">💳 ادامه پرداخت</button>` : ''}
+        <a class="btn btn-primary" href="#/account">پیگیری سفارش‌ها</a>
+        <a class="btn btn-ghost" href="#/shop">بازگشت به فروشگاه</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------- auth ---------- */
+function authView(params) {
+  window.__authNext = params.next || '';
+  return `
+  <div class="container">
+    <div class="auth-wrap">
+      <div class="auth-logo">
+        <span class="bean">☕</span>
+        <h2>به ونیز خوش آمدید</h2>
+        <p>برای خرید و پیگیری سفارش‌ها عضو شوید</p>
+      </div>
+      <div class="auth-tabs">
+        <button id="tabLogin" class="active" onclick="APP.authTab('login')">ورود</button>
+        <button id="tabReg" onclick="APP.authTab('reg')">عضویت</button>
+      </div>
+      <div id="authErr"></div>
+      <form id="formLogin" onsubmit="return APP.doLogin(event)">
+        <div class="form-group"><label class="form-label">شماره موبایل</label><input class="form-control" id="liPhone" placeholder="09xxxxxxxxx" inputmode="tel" style="direction:ltr;text-align:right"></div>
+        <div class="form-group"><label class="form-label">رمز عبور</label><input class="form-control" id="liPass" type="password" placeholder="••••••••"></div>
+        <button class="btn btn-primary btn-lg btn-block">ورود به حساب</button>
+      </form>
+      <form id="formReg" style="display:none" onsubmit="return APP.doRegister(event)">
+        <div class="form-group"><label class="form-label">نام و نام خانوادگی</label><input class="form-control" id="rgName" placeholder="مثلاً سارا محمدی"></div>
+        <div class="form-group"><label class="form-label">شماره موبایل</label><input class="form-control" id="rgPhone" placeholder="09xxxxxxxxx" inputmode="tel" style="direction:ltr;text-align:right"></div>
+        <div class="form-group"><label class="form-label">رمز عبور</label><input class="form-control" id="rgPass" type="password" placeholder="حداقل ۶ کاراکتر"></div>
+        <div class="form-group"><label class="form-label">تکرار رمز عبور</label><input class="form-control" id="rgPass2" type="password" placeholder="••••••••"></div>
+        <button class="btn btn-primary btn-lg btn-block">ثبت‌نام و ورود</button>
+      </form>
+    </div>
+  </div>`;
+}
+
+/* ---------- account ---------- */
+function accountView() {
+  const u = currentUser();
+  if (!u) { go('auth'); return '<div class="container"></div>'; }
+  const orders = getOrders().filter(o => o.userId === u.id);
+  return `
+  <div class="container">
+    <div class="section-head"><h2>حساب کاربری</h2><button class="btn btn-danger btn-sm" onclick="APP.logout()">🚪 خروج</button></div>
+    <div class="panel" style="margin-bottom:18px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+      <div style="width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--brown),var(--espresso));color:var(--gold);font-size:26px;display:flex;align-items:center;justify-content:center">👤</div>
+      <div style="flex:1;min-width:180px">
+        <b style="font-size:16px;color:var(--espresso)">${esc(u.name)}</b>
+        <div style="font-size:13px;color:var(--muted)">${esc(u.phone)} · عضویت از ${faDate(u.createdAt)}</div>
+      </div>
+      <div style="text-align:center;background:var(--cream2);border-radius:14px;padding:10px 22px">
+        <b style="font-size:19px;color:var(--brown);display:block">${fa(orders.length)}</b>
+        <small style="color:var(--muted)">سفارش</small>
+      </div>
+    </div>
+    <div class="section-head"><h2>سفارش‌های من</h2></div>
+    ${orders.length ? `<div class="orders-list">${orders.map(orderCardHTML).join('')}</div>`
+      : emptyBox('📦', 'هنوز سفارشی ثبت نکرده‌اید', 'اولین خرید خود را از فروشگاه ونیز تجربه کنید.', '<a class="btn btn-primary" href="#/shop">شروع خرید</a>')}
+  </div>`;
+}
+function orderCardHTML(o) {
+  return `
+  <div class="order-card">
+    <div class="oc-head">
+      <span class="code">${esc(o.code)}</span>
+      <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+        <span class="ochip ${o.payStatus === 'paid' ? 'paid' : (o.payMethod === 'cod' ? 'unpaid' : 'unpaid')}">${o.payMethod === 'cod' ? 'پرداخت در محل' : PAY_STATUS[o.payStatus]}</span>
+        <span class="ochip ${o.status}">${ORDER_STATUS[o.status]}</span>
+      </div>
+    </div>
+    <div class="order-items-mini">${o.items.map(i => esc(i.name) + ' × ' + fa(i.qty)).join(' ، ')}</div>
+    <div class="oc-head" style="margin-top:10px;margin-bottom:0">
+      <span style="font-size:12px;color:var(--muted)">${faDate(o.createdAt)} ساعت ${faTime(o.createdAt)}</span>
+      <div style="display:flex;gap:10px;align-items:center">
+        <b style="color:var(--espresso)">${money(o.total)}</b>
+        ${o.payStatus !== 'paid' && o.payMethod === 'online' && o.status !== 'canceled' ? `<button class="btn btn-gold btn-sm" onclick="go('pay/${o.id}')">پرداخت</button>` : ''}
+        <button class="btn btn-ghost btn-sm" onclick="APP.orderDetail('${o.id}')">جزئیات</button>
+      </div>
+    </div>
+  </div>`;
+}
+function orderDetailModal(id) {
+  const o = getOrders().find(x => x.id === id);
+  if (!o) return;
+  openModal(`
+    <div class="m-head"><h3>سفارش ${esc(o.code)}</h3><button class="m-close" onclick="closeModal()">✕</button></div>
+    <div class="m-body">
+      <table class="tbl"><thead><tr><th>محصول</th><th>قیمت</th><th>تعداد</th><th>جمع</th></tr></thead>
+      <tbody>${o.items.map(i => `<tr><td>${esc(i.name)}</td><td>${money(i.price)}</td><td>${fa(i.qty)}</td><td>${money(i.price * i.qty)}</td></tr>`).join('')}</tbody></table>
+      <div style="margin-top:14px;font-size:13.5px">
+        <div class="sum-row"><span>مبلغ کالاها</span><b>${money(o.subtotal)}</b></div>
+        <div class="sum-row"><span>ارسال</span><b>${o.shipping === 0 ? 'رایگان' : money(o.shipping)}</b></div>
+        <div class="sum-row total"><span>مبلغ کل</span><span>${money(o.total)}</span></div>
+      </div>
+      <div style="margin-top:14px;font-size:13px;line-height:2;color:#5B4B3C">
+        <b>وضعیت:</b> ${ORDER_STATUS[o.status]} — <b>پرداخت:</b> ${o.payMethod === 'cod' ? 'در محل' : PAY_STATUS[o.payStatus]}<br>
+        <b>گیرنده:</b> ${esc(o.customer.name)} · ${esc(o.customer.phone)}<br>
+        <b>نشانی:</b> ${esc(o.customer.city)}، ${esc(o.customer.address)} ${o.customer.zip ? '· کدپستی ' + esc(o.customer.zip) : ''}
+        ${o.note ? '<br><b>توضیحات:</b> ' + esc(o.note) : ''}
+      </div>
+      ${(o.history && o.history.length) ? `<div style="margin-top:14px"><b style="font-size:13px">تاریخچه:</b><div class="order-items-mini">${o.history.slice().reverse().map(h => faDate(h.at) + ' — ' + esc(h.txt)).join('<br>')}</div></div>` : ''}
+    </div>`);
+}
+
+/* ---------- admin login ---------- */
+function adminLoginView() {
+  return `
+  <div class="container">
+    <div class="admin-login-wrap">
+      <div class="auth-wrap">
+        <div class="auth-logo">
+          <span class="bean">🛠️</span>
+          <h2>ورود مدیر فروشگاه</h2>
+          <p>پنل مدیریت veniz</p>
+        </div>
+        <div id="adminErr"></div>
+        <form onsubmit="return APP.doAdminLogin(event)">
+          <div class="form-group"><label class="form-label">نام کاربری</label><input class="form-control" id="adUser" style="direction:ltr;text-align:right" autocomplete="off"></div>
+          <div class="form-group"><label class="form-label">رمز عبور</label><input class="form-control" id="adPass" type="password" autocomplete="off"></div>
+          <button class="btn btn-dark btn-lg btn-block">ورود به پنل مدیریت</button>
+        </form>
+        <div style="text-align:center;margin-top:16px"><a class="link" href="#/" style="font-size:12.5px">← بازگشت به فروشگاه</a></div>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------- router ---------- */
+function route() {
+  closeModal();
+  const raw = location.hash.replace(/^#\/?/, '');
+  const [path, qs] = raw.split('?');
+  const parts = path.split('/').filter(Boolean);
+  const q = {};
+  if (qs) qs.split('&').forEach(kv => { const [k, v] = kv.split('='); q[k] = decodeURIComponent(v || ''); });
+  const app = $('#app');
+  window.scrollTo(0, 0);
+
+  // admin area
+  if (parts[0] === 'admin') {
+    if (!isAdmin()) { location.hash = 'admin-login'; return; }
+    renderAdmin(parts.slice(1), app);
+    return;
+  }
+  if (parts[0] === 'admin-login') {
+    if (isAdmin()) { location.hash = 'admin'; return; }
+    app.innerHTML = adminLoginView();
+    return;
+  }
+
+  let body = '';
+  const seg = parts[0] || 'home';
+  switch (seg) {
+    case 'home': body = homeView(); break;
+    case 'shop': body = shopView(q); break;
+    case 'product': body = productView(parts[1]); break;
+    case 'cart': body = cartView(); break;
+    case 'checkout': body = checkoutView(); break;
+    case 'pay': app.innerHTML = payView(parts[1]); return;
+    case 'result': app.innerHTML = resultView(parts[1]); return;
+    case 'auth': body = authView(q); break;
+    case 'account': body = accountView(); break;
+    default: body = homeView();
+  }
+  const active = seg === 'product' ? 'shop' : seg;
+  app.innerHTML = headerHTML(active) + body + footerHTML() + bottomNavHTML(active);
+  if (seg === 'shop') __refreshShopGrid();
+  updateBadges();
+}
+window.addEventListener('hashchange', route);
+
+/* ---------- APP handlers (inline events) ---------- */
+const APP = {
+  search(e) { e.preventDefault(); const v = ($('#globalQ') || {}).value || ''; SHOP.cat = 'all'; SHOP.q = v; go('shop'); setTimeout(() => { const i = $('#shopQ'); if (i) i.value = v; __refreshShopGrid(); }, 0); return false; },
+  toggleUserMenu(e) {
+    e.stopPropagation();
+    const m = $('#userMenu');
+    if (!m) return;
+    if (m.style.display !== 'none') { m.style.display = 'none'; return; }
+    m.innerHTML = userMenuHTML();
+    const b = e.currentTarget.getBoundingClientRect();
+    m.style.display = 'block';
+    m.style.top = (b.bottom + 8) + 'px';
+    m.style.left = '16px';
+    m.style.right = 'auto';
+    m.onclick = ev => ev.stopPropagation();
+    document.addEventListener('click', APP._closeMenu);
+  },
+  _closeMenu() { const m = $('#userMenu'); if (m) m.style.display = 'none'; document.removeEventListener('click', APP._closeMenu); },
+  logout() { logoutUser(); toast('از حساب خارج شدید', 'ok'); go(''); route(); },
+  shopNav(c) { SHOP.cat = c; SHOP.q = ''; go('shop'); route(); },
+  shopCat(c) { SHOP.cat = c; SHOP.q = ''; go('shop'); route(); },
+  shopQ(v) { SHOP.q = v; __refreshShopGrid(); },
+  shopSort(v) { SHOP.sort = v; __refreshShopGrid(); },
+  pdQty(d) { const i = $('#pdQty'); if (!i) return; const max = +i.max || 99; i.value = Math.min(max, Math.max(1, (+i.value || 1) + d)); },
+  buyNow(id, immediate) {
+    const i = $('#pdQty'); const qty = i ? (+i.value || 1) : 1;
+    addToCart(id, qty);
+    if (immediate) go('checkout');
+  },
+  cartQty(id, d) {
+    const it = getCart().find(x => x.id === id);
+    if (it) setCartQty(id, it.qty + d);
+  },
+  cartSet(id, v) { setCartQty(id, +v || 1); },
+  goCheckout() {
+    if (!currentUser()) { toast('برای ثبت سفارش ابتدا وارد حساب شوید', 'err'); go('auth?next=checkout'); return; }
+    go('checkout');
+  },
+  pickPay(m) {
+    $$('.pay-opt').forEach(el => el.classList.remove('sel'));
+    const el = $('#payOpt' + (m === 'cod' ? 'Cod' : 'Online'));
+    if (el) { el.classList.add('sel'); el.querySelector('input').checked = true; }
+  },
+  placeOrder() {
+    const val = id => (($('#' + id) || {}).value || '').trim();
+    const data = { name: val('coName'), phone: val('coPhone'), city: val('coCity'), zip: val('coZip'), address: val('coAddr') };
+    const note = val('coNote');
+    const errEl = $('#coErr');
+    const showErr = m => { errEl.innerHTML = `<div class="form-error">${m}</div>`; errEl.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+    if (data.name.length < 3) return showErr('نام و نام خانوادگی را کامل وارد کنید.');
+    if (!/^09\d{9}$/.test(data.phone)) return showErr('شماره موبایل باید ۱۱ رقم و با ۰۹ شروع شود.');
+    if (data.city.length < 2) return showErr('نام شهر را وارد کنید.');
+    if (data.address.length < 10) return showErr('نشانی کامل را وارد کنید (حداقل ۱۰ کاراکتر).');
+    const method = ($('#payOptCod input') || {}).checked ? 'cod' : 'online';
+    const u = currentUser();
+    const order = createOrder({ customer: data, payMethod: method, note });
+    if (!order) return;
+    // save address to user profile for next time (optional nicety)
+    if (u) { u.lastAddr = data; saveUsers(getUsers()); }
+    toast('سفارش با کد ' + order.code + ' ثبت شد ✓', 'ok');
+    go(method === 'online' ? 'pay/' + order.id : 'result/' + order.id);
+  },
+  sendOtp(btn) {
+    btn.disabled = true;
+    let s = 60;
+    const input = $('#gwOtp');
+    if (input) input.value = '12345';
+    toast('رمز پویا ارسال شد: ۱۲۳۴۵', 'ok');
+    const t = setInterval(() => { s--; if (s <= 0) { clearInterval(t); btn.disabled = false; btn.textContent = 'دریافت کد'; } else btn.textContent = 'ارسال مجدد (' + fa(s) + ')'; }, 1000);
+  },
+  payNow(orderId) {
+    const otp = ($('#gwOtp') || {}).value || '';
+    if (otp !== '12345') { toast('رمز پویا صحیح نیست (کد آزمایشی: ۱۲۳۴۵)', 'err'); return; }
+    const btn = $('#gwPayBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spin"></span> در حال اتصال به بانک...';
+    setTimeout(() => {
+      btn.innerHTML = '<span class="spin"></span> در حال تأیید تراکنش...';
+      setTimeout(() => {
+        const orders = getOrders();
+        const o = orders.find(x => x.id === orderId);
+        if (o) {
+          o.payStatus = 'paid';
+          o.history = o.history || [];
+          o.history.push({ at: new Date().toISOString(), txt: 'پرداخت آنلاین با موفقیت انجام شد' });
+          saveOrders(orders);
+        }
+        go('result/' + orderId);
+        toast('پرداخت با موفقیت انجام شد ✓', 'ok');
+      }, 1300);
+    }, 1200);
+  },
+  authTab(which) {
+    $('#tabLogin').classList.toggle('active', which === 'login');
+    $('#tabReg').classList.toggle('active', which === 'reg');
+    $('#formLogin').style.display = which === 'login' ? '' : 'none';
+    $('#formReg').style.display = which === 'reg' ? '' : 'none';
+    $('#authErr').innerHTML = '';
+  },
+  doLogin(e) {
+    e.preventDefault();
+    const err = m => $('#authErr').innerHTML = `<div class="form-error">${m}</div>`;
+    const phone = ($('#liPhone').value || '').trim().replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/\D/g, '');
+    const pass = $('#liPass').value;
+    if (!/^09\d{9}$/.test(phone)) return err('شماره موبایل معتبر وارد کنید (مثال: 09123456789).');
+    const r = loginUser(phone, pass);
+    if (r.err) return err(r.err);
+    toast('خوش آمدید ' + r.user.name + ' 👋', 'ok');
+    go(window.__authNext === 'checkout' ? 'checkout' : '');
+    if (window.__authNext === 'checkout') route();
+  },
+  doRegister(e) {
+    e.preventDefault();
+    const err = m => $('#authErr').innerHTML = `<div class="form-error">${m}</div>`;
+    const name = ($('#rgName').value || '').trim();
+    const phone = ($('#rgPhone').value || '').trim().replace(/\D/g, '');
+    const p1 = $('#rgPass').value, p2 = $('#rgPass2').value;
+    if (name.length < 3) return err('نام و نام خانوادگی را کامل وارد کنید.');
+    if (!/^09\d{9}$/.test(phone)) return err('شماره موبایل باید ۱۱ رقم و با ۰۹ شروع شود.');
+    if (p1.length < 6) return err('رمز عبور باید حداقل ۶ کاراکتر باشد.');
+    if (p1 !== p2) return err('تکرار رمز عبور مطابقت ندارد.');
+    const r = registerUser(name, phone, p1);
+    if (r.err) return err(r.err);
+    toast('عضویت شما در ونیز انجام شد 🎉', 'ok');
+    go(window.__authNext === 'checkout' ? 'checkout' : '');
+    if (window.__authNext === 'checkout') route();
+  },
+  orderDetail(id) { orderDetailModal(id); }
+};
+document.addEventListener('click', () => { const m = $('#userMenu'); if (m && m.style.display !== 'none' && m.style.display) APP._closeMenu(); });
+
+/* ================= admin panel ================= */
+
+function adminSidebar(seg) {
+  const orders = getOrders(), users = getUsers(), products = getProducts();
+  const newOrders = orders.filter(o => o.status === 'pending').length;
+  const link = (key, href, icon, label, cnt) =>
+    `<a class="side-link ${seg === key ? 'active' : ''}" href="#/${href}">${icon} ${label}${cnt !== undefined ? `<span class="cnt">${fa(cnt)}</span>` : ''}</a>`;
+  return `
+  <aside class="sidebar">
+    <a class="logo" href="#/admin" style="pointer-events:auto"><span class="bean">☕</span><span>veniz<small>پنل مدیریت</small></span></a>
+    ${link('dashboard', 'admin', '📊', 'داشبورد')}
+    ${link('products', 'admin/products', '📦', 'محصولات', products.length)}
+    ${link('orders', 'admin/orders', '🧾', 'سفارش‌ها', orders.length)}
+    ${link('users', 'admin/users', '👥', 'مشتریان', users.length)}
+    ${link('settings', 'admin/settings', '⚙️', 'تنظیمات فروشگاه')}
+    <div class="side-sep"></div>
+    <a class="side-link" href="#/">🏪 مشاهده فروشگاه</a>
+    <button class="side-link side-out" onclick="APP.adminLogout()">🚪 خروج از پنل</button>
+  </aside>`;
+}
+function adminTop(title, extra) {
+  const u = currentUser();
+  return `<div class="admin-top"><h1>${title}</h1>${extra || ''}<span style="font-size:12.5px;color:var(--muted)">${u ? 'خوش آمدید' : ''} ${new Date().toLocaleDateString('fa-IR', { weekday: 'long', day: 'numeric', month: 'long' })}</span></div>`;
+}
+
+function renderAdmin(sub, app) {
+  const seg = sub[0] || 'dashboard';
+  let inner = '';
+  if (seg === 'products') inner = adminProducts();
+  else if (seg === 'orders') inner = adminOrders();
+  else if (seg === 'users') inner = adminUsers();
+  else if (seg === 'settings') inner = adminSettings();
+  else inner = adminDashboard();
+  app.innerHTML = `<div class="admin-layout">${adminSidebar(seg)}<div class="admin-main">${inner}</div></div>`;
+  if (seg === 'orders') APP._renderOrd();
+  updateBadges();
+}
+
+/* ---------- dashboard ---------- */
+function adminDashboard() {
+  const orders = getOrders(), users = getUsers(), products = getProducts();
+  const valid = orders.filter(o => o.status !== 'canceled');
+  const revenue = valid.reduce((s, o) => s + o.total, 0);
+  const paidCount = valid.filter(o => o.payStatus === 'paid' || o.payMethod === 'cod').length;
+  const low = products.filter(p => p.stock <= 5).sort((a, b) => a.stock - b.stock);
+  const recent = orders.slice(0, 6);
+  return `
+  ${adminTop('داشبورد مدیریت')}
+  <div class="stat-grid">
+    <div class="stat-card"><div class="s-ico i1">💰</div><div><b>${money(revenue)}</b><small>فروش کل (بدون لغوشده‌ها)</small></div></div>
+    <div class="stat-card"><div class="s-ico i2">🧾</div><div><b>${fa(orders.length)}</b><small>کل سفارش‌ها (${fa(paidCount)} پرداخت‌شده)</small></div></div>
+    <div class="stat-card"><div class="s-ico i3">👥</div><div><b>${fa(users.length)}</b><small>مشتری عضو</small></div></div>
+    <div class="stat-card"><div class="s-ico i4">📦</div><div><b>${fa(products.length)}</b><small>محصول فعال</small></div></div>
+  </div>
+  <div class="dash-grid">
+    <div class="admin-panel">
+      <div class="ap-head"><h3>آخرین سفارش‌ها</h3><a class="link" href="#/admin/orders" style="font-size:12.5px">همه سفارش‌ها ←</a></div>
+      ${recent.length ? `<div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>کد</th><th>مشتری</th><th>مبلغ</th><th>پرداخت</th><th>وضعیت</th><th>تاریخ</th></tr></thead>
+        <tbody>${recent.map(o => `<tr>
+          <td><b>${esc(o.code)}</b></td>
+          <td>${esc(o.customer.name)}</td>
+          <td>${money(o.total)}</td>
+          <td><span class="ochip ${o.payStatus === 'paid' ? 'paid' : 'unpaid'}">${o.payMethod === 'cod' ? 'در محل' : PAY_STATUS[o.payStatus]}</span></td>
+          <td><span class="ochip ${o.status}">${ORDER_STATUS[o.status]}</span></td>
+          <td style="white-space:nowrap">${faDate(o.createdAt)}</td>
+        </tr>`).join('')}</tbody></table></div>`
+        : `<div class="empty-state" style="padding:34px"><div class="e-ico">🧾</div><b>هنوز سفارشی ثبت نشده</b><p>اولین سفارش مشتریان اینجا نمایش داده می‌شود.</p></div>`}
+    </div>
+    <div class="admin-panel">
+      <div class="ap-head"><h3>⚠️ هشدار موجودی (۵ یا کمتر)</h3></div>
+      ${low.length ? `<div class="mini-list">${low.map(p => `
+        <div class="ml-row">
+          <div style="display:flex;align-items:center;gap:10px">${imgTag(p.image, 'thumb', p.name)}<span>${esc(p.name)}</span></div>
+          <span class="stock-pill ${p.stock === 0 ? 'zero' : 'low'}">${p.stock === 0 ? 'ناموجود' : fa(p.stock) + ' عدد'}</span>
+        </div>`).join('')}</div>`
+        : `<div class="empty-state" style="padding:34px"><div class="e-ico">✓</div><b>موجودی همه محصولات کافی است</b></div>`}
+    </div>
+  </div>`;
+}
+
+/* ---------- products ---------- */
+function adminProducts() {
+  return `
+  ${adminTop('مدیریت محصولات', `<button class="btn btn-primary" onclick="APP.prodForm()">＋ افزودن محصول جدید</button>`)}
+  <div class="admin-panel">
+    <div class="ap-head">
+      <h3>لیست محصولات</h3>
+      <input class="form-control" id="prodSearch" placeholder="جست‌وجوی محصول..." oninput="APP.filterProdTable(this.value)">
+    </div>
+    <div class="tbl-wrap"><table class="tbl" id="prodTable">
+      <thead><tr><th>محصول</th><th>دسته</th><th>قیمت (تومان)</th><th>موجودی</th><th>ویژه</th><th>عملیات</th></tr></thead>
+      <tbody>${getProducts().slice().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0)).map(adminProdRow).join('')}</tbody>
+    </table></div>
+  </div>`;
+}
+function adminProdRow(p) {
+  return `<tr data-name="${esc(p.name.toLowerCase())}">
+    <td><div style="display:flex;align-items:center;gap:10px">${imgTag(p.image, 'thumb', p.name)}<b>${esc(p.name)}</b></div></td>
+    <td><span class="ochip processing" style="background:var(--cream2);color:var(--brown)">${CATS[p.category]}</span></td>
+    <td style="white-space:nowrap">${p.oldPrice > p.price ? `<span class="old" style="text-decoration:line-through;color:var(--muted);font-size:11px;margin-inline-end:6px">${fa(p.oldPrice)}</span>` : ''}<b>${fa(p.price)}</b></td>
+    <td><span class="stock-pill ${p.stock === 0 ? 'zero' : p.stock <= 5 ? 'low' : 'ok'}">${p.stock === 0 ? 'ناموجود' : fa(p.stock)}</span></td>
+    <td><span class="feat-star ${p.featured ? '' : 'off'}" onclick="APP.toggleFeat('${p.id}')" title="تغییر وضعیت ویژه">★</span></td>
+    <td><div class="actions">
+      <button class="act-view" onclick="go('product/${p.id}')" title="نمایش در فروشگاه">👁</button>
+      <button class="act-edit" onclick="APP.prodForm('${p.id}')" title="ویرایش">✎</button>
+      <button class="act-del" onclick="APP.delProduct('${p.id}')" title="حذف">🗑</button>
+    </div></td>
+  </tr>`;
+}
+
+/* ---------- orders ---------- */
+const ADMIN_ORDER_FILTER = { status: 'all', q: '' };
+function adminOrders() {
+  return `
+  ${adminTop('مدیریت سفارش‌ها')}
+  <div class="admin-panel">
+    <div class="ap-head">
+      <div class="chips" id="ordChips">
+        ${['all', 'pending', 'processing', 'shipped', 'delivered', 'canceled'].map(s =>
+          `<button class="chip ${ADMIN_ORDER_FILTER.status === s ? 'active' : ''}" onclick="APP.ordFilter('${s}')">${s === 'all' ? 'همه' : ORDER_STATUS[s]}</button>`).join('')}
+      </div>
+      <input class="form-control" id="ordSearch" placeholder="کد سفارش یا شماره موبایل..." oninput="APP.ordQ(this.value)">
+    </div>
+    <div id="ordTableWrap"></div>
+  </div>`;
+}
+function adminOrdersTable() {
+  let list = getOrders();
+  if (ADMIN_ORDER_FILTER.status !== 'all') list = list.filter(o => o.status === ADMIN_ORDER_FILTER.status);
+  if (ADMIN_ORDER_FILTER.q) {
+    const q = ADMIN_ORDER_FILTER.q.trim().toLowerCase();
+    list = list.filter(o => (o.code + ' ' + o.customer.phone + ' ' + o.customer.name).toLowerCase().includes(q));
+  }
+  if (!list.length) return `<div class="empty-state" style="padding:36px"><div class="e-ico">🧾</div><b>سفارشی با این فیلتر پیدا نشد</b></div>`;
+  return `<div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>کد</th><th>مشتری</th><th>اقلام</th><th>مبلغ</th><th>پرداخت</th><th>وضعیت سفارش</th><th>تاریخ</th><th></th></tr></thead>
+    <tbody>${list.map(o => `<tr>
+      <td><b>${esc(o.code)}</b></td>
+      <td>${esc(o.customer.name)}<br><small style="color:var(--muted);direction:ltr">${esc(o.customer.phone)}</small></td>
+      <td>${fa(o.items.reduce((s, i) => s + i.qty, 0))} عدد</td>
+      <td style="white-space:nowrap"><b>${money(o.total)}</b></td>
+      <td><span class="ochip ${o.payStatus === 'paid' ? 'paid' : 'unpaid'}">${o.payMethod === 'cod' ? 'در محل' : PAY_STATUS[o.payStatus]}</span></td>
+      <td><select class="status-select" onchange="APP.orderStatus('${o.id}', this.value, '${esc(o.code)}')">
+        ${Object.entries(ORDER_STATUS).map(([k, v]) => `<option value="${k}" ${o.status === k ? 'selected' : ''}>${v}</option>`).join('')}
+      </select></td>
+      <td style="white-space:nowrap">${faDate(o.createdAt)}</td>
+      <td><button class="act-view" onclick="APP.orderDetail('${o.id}')" title="جزئیات">👁</button></td>
+    </tr>`).join('')}</tbody>
+  </table></div>`;
+}
+
+/* ---------- users ---------- */
+function adminUsers() {
+  const users = getUsers();
+  const orders = getOrders();
+  return `
+  ${adminTop('مشتریان فروشگاه')}
+  <div class="admin-panel">
+    <div class="ap-head"><h3>${fa(users.length)} مشتری عضو</h3></div>
+    ${users.length ? `<div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>نام</th><th>موبایل</th><th>سفارش‌ها</th><th>مجموع خرید</th><th>تاریخ عضویت</th></tr></thead>
+      <tbody>${users.map(u => {
+        const uo = orders.filter(o => o.userId === u.id && o.status !== 'canceled');
+        const spent = uo.reduce((s, o) => s + o.total, 0);
+        return `<tr>
+          <td><b>${esc(u.name)}</b></td>
+          <td style="direction:ltr;text-align:right">${esc(u.phone)}</td>
+          <td>${fa(uo.length)}</td>
+          <td>${money(spent)}</td>
+          <td>${faDate(u.createdAt)}</td>
+        </tr>`;
+      }).join('')}</tbody></table></div>`
+      : `<div class="empty-state" style="padding:36px"><div class="e-ico">👥</div><b>هنوز مشتری‌ای عضو نشده است</b><p>کاربران پس از ثبت‌نام در فروشگاه اینجا نمایش داده می‌شوند.</p></div>`}
+  </div>`;
+}
+
+/* ---------- settings ---------- */
+function adminSettings() {
+  const st = getSettings();
+  return `
+  ${adminTop('تنظیمات فروشگاه')}
+  <div class="admin-panel" style="max-width:560px">
+    <div class="ap-head"><h3>ارسال و پرداخت</h3></div>
+    <div class="m-body">
+      <div id="setErr"></div>
+      <div class="form-group">
+        <label class="form-label">هزینه ارسال (تومان)</label>
+        <input class="form-control" id="setShip" type="number" min="0" value="${st.shippingCost}">
+        <p class="form-hint">این مبلغ به سفارش‌هایی اضافه می‌شود که به آستانه ارسال رایگان نرسیده‌اند.</p>
+      </div>
+      <div class="form-group">
+        <label class="form-label">حد آستانه ارسال رایگان (تومان)</label>
+        <input class="form-control" id="setFree" type="number" min="0" value="${st.freeShipping}">
+        <p class="form-hint">سفارش‌های بالای این مبلغ، ارسال رایگان دارند.</p>
+      </div>
+      <button class="btn btn-primary" onclick="APP.saveSettings()">ذخیره تنظیمات ✓</button>
+      <div class="alert-note" style="margin-top:18px">💡 اطلاعات این فروشگاه (محصولات، کاربران، سفارش‌ها) در <b>localStorage مرورگر</b> نگهداری می‌شود؛ یعنی نسخهٔ آزمایشی/دمو است و برای راه‌اندازی واقعی چندکاربره به سرور و دیتابیس نیاز دارد.</div>
+    </div>
+  </div>`;
+}
+
+/* ---------- admin handlers ---------- */
+Object.assign(APP, {
+  doAdminLogin(e) {
+    e.preventDefault();
+    const user = ($('#adUser').value || '').trim();
+    const pass = $('#adPass').value || '';
+    const r = adminLogin(user, pass);
+    if (r.err) { $('#adminErr').innerHTML = `<div class="form-error">${r.err}</div>`; return false; }
+    toast('به پنل مدیریت خوش آمدید ☕', 'ok');
+    go('admin');
+    route();
+    return false;
+  },
+  adminLogout() { adminLogout(); toast('از پنل مدیریت خارج شدید', 'ok'); go(''); route(); },
+  /* products */
+  filterProdTable(q) {
+    q = (q || '').trim().toLowerCase();
+    $$('#prodTable tbody tr').forEach(tr => { tr.style.display = !q || (tr.dataset.name || '').includes(q) ? '' : 'none'; });
+  },
+  toggleFeat(id) {
+    const ps = getProducts();
+    const p = ps.find(x => x.id === id);
+    if (!p) return;
+    p.featured = !p.featured;
+    saveProducts(ps);
+    route();
+    toast(p.featured ? 'محصول ویژه شد ★' : 'از حالت ویژه خارج شد', 'ok');
+  },
+  delProduct(id) {
+    const p = getProduct(id);
+    if (!p) return;
+    confirmBox('محصول «' + p.name + '» برای همیشه حذف شود؟', () => {
+      saveProducts(getProducts().filter(x => x.id !== id));
+      saveCart(getCart().filter(i => i.id !== id));
+      route();
+      toast('محصول حذف شد', 'ok');
+    });
+  },
+  prodForm(id) {
+    const p = id ? getProduct(id) : null;
+    openModal(`
+      <div class="m-head"><h3>${p ? 'ویرایش محصول' : 'افزودن محصول جدید'}</h3><button class="m-close" onclick="closeModal()">✕</button></div>
+      <div class="m-body">
+        <div id="pfErr"></div>
+        <form onsubmit="return APP.saveProduct(event, '${p ? p.id : ''}')">
+          <div class="form-group"><label class="form-label">نام محصول *</label><input class="form-control" id="pfName" value="${p ? esc(p.name) : ''}" placeholder="مثلاً قهوه اسپرسو ونیز — ۲۵۰ گرم"></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">دسته‌بندی *</label>
+              <select class="form-control" id="pfCat">
+                ${Object.entries(CATS).map(([k, v]) => `<option value="${k}" ${p && p.category === k ? 'selected' : ''}>${v}</option>`).join('')}
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label">موجودی انبار *</label><input class="form-control" id="pfStock" type="number" min="0" value="${p ? p.stock : 10}"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">قیمت (تومان) *</label><input class="form-control" id="pfPrice" type="number" min="0" value="${p ? p.price : ''}"></div>
+            <div class="form-group"><label class="form-label">قیمت قبل از تخفیف (اختیاری)</label><input class="form-control" id="pfOld" type="number" min="0" value="${p && p.oldPrice ? p.oldPrice : ''}"></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">آدرس تصویر محصول</label>
+            <input class="form-control" id="pfImg" style="direction:ltr;text-align:left" value="${p ? esc(p.image || '') : ''}" placeholder="https://..." oninput="APP.imgPreview(this.value)">
+            <div id="pfPrev" style="margin-top:8px">${p ? imgTag(p.image, 'thumb', '') : ''}</div>
+            <p class="form-hint">می‌توانید لینک تصویر از اینترنت بدهید؛ اگر خالی بماند، آیکون پیش‌فرض قهوه نمایش داده می‌شود.</p>
+          </div>
+          <div class="form-group"><label class="form-label">توضیحات محصول</label><textarea class="form-control" id="pfDesc" placeholder="ویژگی‌ها، طعم، مشخصات...">${p ? esc(p.desc || '') : ''}</textarea></div>
+          <label style="display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;color:var(--brown);margin-bottom:16px">
+            <input type="checkbox" id="pfFeat" ${p && p.featured ? 'checked' : ''} style="width:17px;height:17px;accent-color:var(--brown)"> نمایش در بخش «محصولات ویژه» صفحه اصلی
+          </label>
+          <div style="display:flex;gap:10px;justify-content:flex-end">
+            <button type="button" class="btn btn-ghost" onclick="closeModal()">انصراف</button>
+            <button class="btn btn-primary">${p ? 'ذخیره تغییرات' : 'افزودن محصول'} ✓</button>
+          </div>
+        </form>
+      </div>`);
+  },
+  imgPreview(src) { $('#pfPrev').innerHTML = imgTag(src, 'thumb', ''); },
+  saveProduct(e, id) {
+    e.preventDefault();
+    const err = m => $('#pfErr').innerHTML = `<div class="form-error">${m}</div>`;
+    const name = ($('#pfName').value || '').trim();
+    const category = $('#pfCat').value;
+    const stock = Math.max(0, parseInt($('#pfStock').value, 10) || 0);
+    const price = parseInt($('#pfPrice').value, 10) || 0;
+    const old = parseInt($('#pfOld').value, 10) || 0;
+    const image = ($('#pfImg').value || '').trim();
+    const desc = ($('#pfDesc').value || '').trim();
+    const featured = ($('#pfFeat').checked);
+    if (name.length < 3) return err('نام محصول باید حداقل ۳ کاراکتر باشد.');
+    if (price <= 0) return err('قیمت باید عددی بزرگ‌تر از صفر باشد.');
+    if (old && old <= price) return err('قیمت «قبل از تخفیف» باید بزرگ‌تر از قیمت فعلی باشد.');
+    const ps = getProducts();
+    if (id) {
+      const p = ps.find(x => x.id === id);
+      Object.assign(p, { name, category, stock, price, oldPrice: old, image, desc, featured });
+      toast('تغییرات ذخیره شد ✓', 'ok');
+    } else {
+      ps.unshift({ id: uid(), name, category, price, oldPrice: old, stock, featured, image, desc, createdAt: Date.now() });
+      toast('محصول جدید اضافه شد ✓', 'ok');
+    }
+    saveProducts(ps);
+    closeModal();
+    route();
+    return false;
+  },
+  /* orders */
+  ordFilter(s) { ADMIN_ORDER_FILTER.status = s; $$('#ordChips .chip').forEach(c => c.classList.toggle('active', c.textContent.trim() === (s === 'all' ? 'همه' : ORDER_STATUS[s]))); APP._renderOrd(); },
+  ordQ(v) { ADMIN_ORDER_FILTER.q = v; APP._renderOrd(); },
+  _renderOrd() { const w = $('#ordTableWrap'); if (w) w.innerHTML = adminOrdersTable(); },
+  orderStatus(id, status, code) {
+    if (status === 'canceled') {
+      confirmBox('سفارش ' + code + ' لغو شود؟ موجودی اقلام به انبار برمی‌گردد.', () => {
+        setOrderStatus(id, 'canceled');
+        toast('سفارش لغو شد و موجودی برگشت خورد', 'ok');
+        route();
+      });
+    } else {
+      setOrderStatus(id, status);
+      toast('وضعیت سفارش ' + code + ' به «' + ORDER_STATUS[status] + '» تغییر کرد', 'ok');
+      route();
+    }
+  },
+  /* settings */
+  saveSettings() {
+    const ship = parseInt($('#setShip').value, 10) || 0;
+    const free = parseInt($('#setFree').value, 10) || 0;
+    if (free < 0 || ship < 0) return;
+    DB.set('veniz_settings', { shippingCost: ship, freeShipping: free });
+    toast('تنظیمات ذخیره شد ✓', 'ok');
+  }
+});
+
+/* ---------- boot ---------- */
+seedIfEmpty();
+route();
+
+</script>
+</body>
+</html>
